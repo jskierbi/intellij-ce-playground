@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'sdk-java-lib'
+
+group = 'com.android.tools'
+archivesBaseName = 'draw9patch'
+version = rootProject.ext.baseVersion
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+}
+
+sourceSets {
+    main.resources.srcDir 'src/main/java'
+    test.resources.srcDir 'src/test/java'
+}
+
+sdk {
+    linux {
+        item('etc/draw9patch') { executable true}
+    }
+    mac {
+        item('etc/draw9patch') { executable true}
+    }
+    windows {
+        item 'etc/draw9patch.bat'
+    }
+}
+
+sdkJar.manifest.attributes("Main-Class": "com.android.draw9patch.Application")

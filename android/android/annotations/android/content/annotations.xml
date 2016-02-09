@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="android.content.AbstractThreadedSyncAdapter void onSyncCanceled(java.lang.Thread) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.AsyncQueryHandler android.os.Handler createHandler(android.os.Looper) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.AsyncQueryHandler void handleMessage(android.os.Message) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.AsyncQueryHandler.WorkerHandler WorkerHandler(android.os.Looper) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.AsyncQueryHandler.WorkerHandler void handleMessage(android.os.Message) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.AsyncTaskLoader AsyncTaskLoader(android.content.Context) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.AsyncTaskLoader void dump(java.lang.String, java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]) 2">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.BroadcastReceiver android.os.IBinder peekService(android.content.Context, android.content.Intent) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.BroadcastReceiver android.os.IBinder peekService(android.content.Context, android.content.Intent) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipData ClipData(android.content.ClipData) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipData android.content.ClipData newHtmlText(java.lang.CharSequence, java.lang.CharSequence, java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipData android.content.ClipData newIntent(java.lang.CharSequence, android.content.Intent)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipData android.content.ClipData newPlainText(java.lang.CharSequence, java.lang.CharSequence)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipData android.content.ClipData newRawUri(java.lang.CharSequence, android.net.Uri)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipData android.content.ClipData newUri(android.content.ContentResolver, java.lang.CharSequence, android.net.Uri)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipData android.content.ClipData newUri(android.content.ContentResolver, java.lang.CharSequence, android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipData android.content.ClipData newUri(android.content.ContentResolver, java.lang.CharSequence, android.net.Uri) 2">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipData void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipData.Item java.lang.CharSequence coerceToStyledText(android.content.Context) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipData.Item java.lang.CharSequence coerceToText(android.content.Context) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipData.Item java.lang.String coerceToHtmlText(android.content.Context) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipDescription ClipDescription(android.content.ClipDescription) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipDescription boolean compareMimeTypes(java.lang.String, java.lang.String) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipDescription boolean hasMimeType(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipDescription java.lang.String[] filterMimeTypes(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ClipDescription void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName ComponentName(android.content.Context, java.lang.Class&lt;?&gt;) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName ComponentName(android.content.Context, java.lang.Class&lt;?&gt;) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName ComponentName(android.content.Context, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName ComponentName(android.os.Parcel) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName android.content.ComponentName clone()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName android.content.ComponentName readFromParcel(android.os.Parcel) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName android.content.ComponentName unflattenFromString(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName int compareTo(android.content.ComponentName) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName java.lang.String flattenToShortString()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName java.lang.String flattenToString()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName java.lang.String toShortString()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName void writeToParcel(android.content.ComponentName, android.os.Parcel) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ComponentName void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProvider android.content.ContentProviderResult[] applyBatch(java.util.ArrayList&lt;android.content.ContentProviderOperation&gt;) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProvider android.content.res.AssetFileDescriptor openTypedAssetFile(android.net.Uri, java.lang.String, android.os.Bundle) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProvider android.os.Bundle call(java.lang.String, java.lang.String, android.os.Bundle) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.ContentProvider android.os.Bundle call(java.lang.String, java.lang.String, android.os.Bundle) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.ContentProvider android.os.ParcelFileDescriptor openPipeHelper(android.net.Uri, java.lang.String, android.os.Bundle, T, android.content.ContentProvider.PipeDataWriter&lt;T&gt;) 4">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProvider int bulkInsert(android.net.Uri, android.content.ContentValues[]) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProvider void dump(java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation android.content.ContentProviderOperation.Builder newAssertQuery(android.net.Uri)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation android.content.ContentProviderOperation.Builder newDelete(android.net.Uri)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation android.content.ContentProviderOperation.Builder newInsert(android.net.Uri)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation android.content.ContentProviderOperation.Builder newUpdate(android.net.Uri)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation android.content.ContentProviderResult apply(android.content.ContentProvider, android.content.ContentProviderResult[], int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation android.content.ContentProviderResult apply(android.content.ContentProvider, android.content.ContentProviderResult[], int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation.Builder android.content.ContentProviderOperation build()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation.Builder android.content.ContentProviderOperation.Builder withExpectedCount(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation.Builder android.content.ContentProviderOperation.Builder withSelection(java.lang.String, java.lang.String[])">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation.Builder android.content.ContentProviderOperation.Builder withSelectionBackReference(int, int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation.Builder android.content.ContentProviderOperation.Builder withValue(java.lang.String, java.lang.Object)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation.Builder android.content.ContentProviderOperation.Builder withValueBackReference(java.lang.String, int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation.Builder android.content.ContentProviderOperation.Builder withValueBackReferences(android.content.ContentValues)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation.Builder android.content.ContentProviderOperation.Builder withValues(android.content.ContentValues)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation.Builder android.content.ContentProviderOperation.Builder withValues(android.content.ContentValues) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderOperation.Builder android.content.ContentProviderOperation.Builder withYieldAllowed(boolean)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderResult ContentProviderResult(android.os.Parcel) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentProviderResult void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentQueryMap ContentQueryMap(android.database.Cursor, java.lang.String, boolean, android.os.Handler) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver android.content.ContentProviderClient acquireContentProviderClient(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver android.content.ContentProviderClient acquireUnstableContentProviderClient(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver android.content.res.AssetFileDescriptor openAssetFileDescriptor(android.net.Uri, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver android.content.res.AssetFileDescriptor openTypedAssetFileDescriptor(android.net.Uri, java.lang.String, android.os.Bundle) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver android.database.Cursor query(android.net.Uri, java.lang.String[], java.lang.String, java.lang.String[], java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver android.database.Cursor query(android.net.Uri, java.lang.String[], java.lang.String, java.lang.String[], java.lang.String, android.os.CancellationSignal) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver android.net.Uri insert(android.net.Uri, android.content.ContentValues) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver android.os.Bundle call(android.net.Uri, java.lang.String, java.lang.String, android.os.Bundle) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.ContentResolver android.os.Bundle call(android.net.Uri, java.lang.String, java.lang.String, android.os.Bundle) 3">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.ContentResolver android.os.ParcelFileDescriptor openFileDescriptor(android.net.Uri, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver int bulkInsert(android.net.Uri, android.content.ContentValues[]) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver int delete(android.net.Uri, java.lang.String, java.lang.String[]) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver int update(android.net.Uri, android.content.ContentValues, java.lang.String, java.lang.String[]) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver java.io.InputStream openInputStream(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver java.io.OutputStream openOutputStream(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver java.io.OutputStream openOutputStream(android.net.Uri, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver java.lang.Object addStatusChangeListener(int, android.content.SyncStatusObserver)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver java.lang.String getType(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver java.lang.String[] getStreamTypes(android.net.Uri, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver void addPeriodicSync(android.accounts.Account, java.lang.String, android.os.Bundle, long) 2">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver void registerContentObserver(android.net.Uri, boolean, android.database.ContentObserver) 2">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver void releasePersistableUriPermission(android.net.Uri, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION, android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.ContentResolver void removePeriodicSync(android.accounts.Account, java.lang.String, android.os.Bundle) 2">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver void requestSync(android.accounts.Account, java.lang.String, android.os.Bundle) 2">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver void takePersistableUriPermission(android.net.Uri, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION, android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.ContentResolver void unregisterContentObserver(android.database.ContentObserver) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentResolver void validateSyncExtrasBundle(android.os.Bundle) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentUris android.net.Uri withAppendedId(android.net.Uri, long) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentUris android.net.Uri.Builder appendId(android.net.Uri.Builder, long)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentUris android.net.Uri.Builder appendId(android.net.Uri.Builder, long) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentUris long parseId(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentValues ContentValues(android.content.ContentValues) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentValues java.util.Set&lt;java.lang.String&gt; keySet()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentValues java.util.Set&lt;java.util.Map.Entry&lt;java.lang.String,java.lang.Object&gt;&gt; valueSet()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentValues void putAll(android.content.ContentValues) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.ContentValues void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context android.content.ComponentName startService(android.content.Intent)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context android.content.Context createConfigurationContext(android.content.res.Configuration) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context android.content.Context createDisplayContext(android.view.Display) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context android.content.Context createPackageContext(java.lang.String, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Context.CONTEXT_INCLUDE_CODE, android.content.Context.CONTEXT_IGNORE_SECURITY, android.content.Context.CONTEXT_RESTRICTED}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Context android.content.Intent registerReceiver(android.content.BroadcastReceiver, android.content.IntentFilter)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context android.content.Intent registerReceiver(android.content.BroadcastReceiver, android.content.IntentFilter) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context android.content.Intent registerReceiver(android.content.BroadcastReceiver, android.content.IntentFilter, java.lang.String, android.os.Handler)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context android.content.Intent registerReceiver(android.content.BroadcastReceiver, android.content.IntentFilter, java.lang.String, android.os.Handler) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context android.content.Intent registerReceiver(android.content.BroadcastReceiver, android.content.IntentFilter, java.lang.String, android.os.Handler) 3">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context android.content.res.ColorStateList getColorStateList(int)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet, int[]) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet, int[]) 1">
+    <annotation name="android.support.annotation.StyleableRes" />
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet, int[], int, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet, int[], int, int) 1">
+    <annotation name="android.support.annotation.StyleableRes" />
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet, int[], int, int) 2">
+    <annotation name="android.support.annotation.AttrRes" />
+  </item>
+  <item name="android.content.Context android.content.res.TypedArray obtainStyledAttributes(android.util.AttributeSet, int[], int, int) 3">
+    <annotation name="android.support.annotation.StyleRes" />
+  </item>
+  <item name="android.content.Context android.content.res.TypedArray obtainStyledAttributes(int, int[]) 0">
+    <annotation name="android.support.annotation.StyleRes" />
+  </item>
+  <item name="android.content.Context android.content.res.TypedArray obtainStyledAttributes(int, int[]) 1">
+    <annotation name="android.support.annotation.StyleableRes" />
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context android.content.res.TypedArray obtainStyledAttributes(int[]) 0">
+    <annotation name="android.support.annotation.StyleableRes" />
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context android.database.sqlite.SQLiteDatabase openOrCreateDatabase(java.lang.String, int, android.database.sqlite.SQLiteDatabase.CursorFactory, android.database.DatabaseErrorHandler) 3">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context android.graphics.drawable.Drawable getDrawable(int)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context boolean bindService(android.content.Intent, android.content.ServiceConnection, int) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context boolean bindService(android.content.Intent, android.content.ServiceConnection, int) 2">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Context.BIND_AUTO_CREATE, android.content.Context.BIND_DEBUG_UNBIND, android.content.Context.BIND_NOT_FOREGROUND, android.content.Context.BIND_ABOVE_CLIENT, android.content.Context.BIND_ALLOW_OOM_MANAGEMENT, android.content.Context.BIND_WAIVE_PRIORITY, android.content.Context.BIND_IMPORTANT, android.content.Context.BIND_ADJUST_WITH_ACTIVITY}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Context boolean startInstrumentation(android.content.ComponentName, java.lang.String, android.os.Bundle) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context boolean startInstrumentation(android.content.ComponentName, java.lang.String, android.os.Bundle) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context boolean startInstrumentation(android.content.ComponentName, java.lang.String, android.os.Bundle) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context int checkCallingOrSelfPermission(java.lang.String)">
+    <annotation name="android.support.annotation.CheckResult">
+      <val name="suggest" val="&quot;#enforceCallingOrSelfPermission(String,String)&quot;" />
+    </annotation>
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.pm.PackageManager.PERMISSION_GRANTED, android.content.pm.PackageManager.PERMISSION_DENIED}" />
+    </annotation>
+  </item>
+  <item name="android.content.Context int checkCallingOrSelfPermission(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context int checkCallingOrSelfUriPermission(android.net.Uri, int)">
+    <annotation name="android.support.annotation.CheckResult">
+      <val name="suggest" val="&quot;#enforceCallingOrSelfUriPermission(Uri,int,String)&quot;" />
+    </annotation>
+  </item>
+  <item name="android.content.Context int checkCallingOrSelfUriPermission(android.net.Uri, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION, android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Context int checkCallingPermission(java.lang.String)">
+    <annotation name="android.support.annotation.CheckResult">
+      <val name="suggest" val="&quot;#enforceCallingPermission(String,String)&quot;" />
+    </annotation>
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.pm.PackageManager.PERMISSION_GRANTED, android.content.pm.PackageManager.PERMISSION_DENIED}" />
+    </annotation>
+  </item>
+  <item name="android.content.Context int checkCallingPermission(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context int checkCallingUriPermission(android.net.Uri, int)">
+    <annotation name="android.support.annotation.CheckResult">
+      <val name="suggest" val="&quot;#enforceCallingUriPermission(Uri,int,String)&quot;" />
+    </annotation>
+  </item>
+  <item name="android.content.Context int checkCallingUriPermission(android.net.Uri, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION, android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Context int checkPermission(java.lang.String, int, int)">
+    <annotation name="android.support.annotation.CheckResult">
+      <val name="suggest" val="&quot;#enforcePermission(String,int,int,String)&quot;" />
+    </annotation>
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.pm.PackageManager.PERMISSION_GRANTED, android.content.pm.PackageManager.PERMISSION_DENIED}" />
+    </annotation>
+  </item>
+  <item name="android.content.Context int checkPermission(java.lang.String, int, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context int checkSelfPermission(java.lang.String)">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.pm.PackageManager.PERMISSION_GRANTED, android.content.pm.PackageManager.PERMISSION_DENIED}" />
+    </annotation>
+  </item>
+  <item name="android.content.Context int checkSelfPermission(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context int checkUriPermission(android.net.Uri, int, int, int)">
+    <annotation name="android.support.annotation.CheckResult">
+      <val name="suggest" val="&quot;#enforceUriPermission(Uri,int,int,String)&quot;" />
+    </annotation>
+  </item>
+  <item name="android.content.Context int checkUriPermission(android.net.Uri, int, int, int) 3">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION, android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Context int checkUriPermission(android.net.Uri, java.lang.String, java.lang.String, int, int, int)">
+    <annotation name="android.support.annotation.CheckResult">
+      <val name="suggest" val="&quot;#enforceUriPermission(Uri,String,String,int,int,int,String)&quot;" />
+    </annotation>
+  </item>
+  <item name="android.content.Context int checkUriPermission(android.net.Uri, java.lang.String, java.lang.String, int, int, int) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context int checkUriPermission(android.net.Uri, java.lang.String, java.lang.String, int, int, int) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context int checkUriPermission(android.net.Uri, java.lang.String, java.lang.String, int, int, int) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context int checkUriPermission(android.net.Uri, java.lang.String, java.lang.String, int, int, int) 5">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION, android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Context int getColor(int)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context java.io.File getExternalCacheDir()">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context java.io.File getExternalFilesDir(java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context java.io.File getExternalFilesDir(java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context java.lang.CharSequence getText(int) 0">
+    <annotation name="android.support.annotation.StringRes" />
+  </item>
+  <item name="android.content.Context java.lang.Object getSystemService(java.lang.String) 0">
+    <annotation name="android.support.annotation.StringDef">
+      <val name="value" val="{android.content.Context.POWER_SERVICE, android.content.Context.WINDOW_SERVICE, android.content.Context.LAYOUT_INFLATER_SERVICE, android.content.Context.ACCOUNT_SERVICE, android.content.Context.ACTIVITY_SERVICE, android.content.Context.ALARM_SERVICE, android.content.Context.NOTIFICATION_SERVICE, android.content.Context.ACCESSIBILITY_SERVICE, android.content.Context.CAPTIONING_SERVICE, android.content.Context.KEYGUARD_SERVICE, android.content.Context.LOCATION_SERVICE, android.content.Context.SEARCH_SERVICE, android.content.Context.SENSOR_SERVICE, android.content.Context.STORAGE_SERVICE, android.content.Context.WALLPAPER_SERVICE, android.content.Context.VIBRATOR_SERVICE, android.content.Context.CONNECTIVITY_SERVICE, android.content.Context.NETWORK_STATS_SERVICE, android.content.Context.WIFI_SERVICE, android.content.Context.WIFI_P2P_SERVICE, android.content.Context.NSD_SERVICE, android.content.Context.AUDIO_SERVICE, android.content.Context.FINGERPRINT_SERVICE, android.content.Context.MEDIA_ROUTER_SERVICE, android.content.Context.TELEPHONY_SERVICE, android.content.Context.TELEPHONY_SUBSCRIPTION_SERVICE, android.content.Context.CARRIER_CONFIG_SERVICE, android.content.Context.TELECOM_SERVICE, android.content.Context.CLIPBOARD_SERVICE, android.content.Context.INPUT_METHOD_SERVICE, android.content.Context.TEXT_SERVICES_MANAGER_SERVICE, android.content.Context.APPWIDGET_SERVICE, android.content.Context.DROPBOX_SERVICE, android.content.Context.DEVICE_POLICY_SERVICE, android.content.Context.UI_MODE_SERVICE, android.content.Context.DOWNLOAD_SERVICE, android.content.Context.NFC_SERVICE, android.content.Context.BLUETOOTH_SERVICE, android.content.Context.USB_SERVICE, android.content.Context.LAUNCHER_APPS_SERVICE, android.content.Context.INPUT_SERVICE, android.content.Context.DISPLAY_SERVICE, android.content.Context.USER_SERVICE, android.content.Context.RESTRICTIONS_SERVICE, android.content.Context.APP_OPS_SERVICE, android.content.Context.CAMERA_SERVICE, android.content.Context.PRINT_SERVICE, android.content.Context.CONSUMER_IR_SERVICE, android.content.Context.TV_INPUT_SERVICE, android.content.Context.USAGE_STATS_SERVICE, android.content.Context.MEDIA_SESSION_SERVICE, android.content.Context.BATTERY_SERVICE, android.content.Context.JOB_SCHEDULER_SERVICE, android.content.Context.MEDIA_PROJECTION_SERVICE, android.content.Context.MIDI_SERVICE}" />
+    </annotation>
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context java.lang.String getString(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context java.lang.String getString(int) 0">
+    <annotation name="android.support.annotation.StringRes" />
+  </item>
+  <item name="android.content.Context java.lang.String getString(int, java.lang.Object...)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context java.lang.String getString(int, java.lang.Object...) 0">
+    <annotation name="android.support.annotation.StringRes" />
+  </item>
+  <item name="android.content.Context void enforceCallingOrSelfPermission(java.lang.String, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context void enforceCallingOrSelfPermission(java.lang.String, java.lang.String) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void enforceCallingOrSelfUriPermission(android.net.Uri, int, java.lang.String) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION, android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Context void enforceCallingPermission(java.lang.String, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context void enforceCallingPermission(java.lang.String, java.lang.String) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void enforceCallingUriPermission(android.net.Uri, int, java.lang.String) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION, android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Context void enforcePermission(java.lang.String, int, int, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context void enforcePermission(java.lang.String, int, int, java.lang.String) 3">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void enforceUriPermission(android.net.Uri, int, int, int, java.lang.String) 3">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION, android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Context void enforceUriPermission(android.net.Uri, java.lang.String, java.lang.String, int, int, int, java.lang.String) 0">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void enforceUriPermission(android.net.Uri, java.lang.String, java.lang.String, int, int, int, java.lang.String) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void enforceUriPermission(android.net.Uri, java.lang.String, java.lang.String, int, int, int, java.lang.String) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void enforceUriPermission(android.net.Uri, java.lang.String, java.lang.String, int, int, int, java.lang.String) 5">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION, android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Context void enforceUriPermission(android.net.Uri, java.lang.String, java.lang.String, int, int, int, java.lang.String) 6">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void grantUriPermission(java.lang.String, android.net.Uri, int) 2">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION, android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION, android.content.Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION, android.content.Intent.FLAG_GRANT_PREFIX_URI_PERMISSION}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Context void revokeUriPermission(android.net.Uri, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION, android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Context void sendBroadcast(android.content.Intent, java.lang.String) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendBroadcastAsUser(android.content.Intent, android.os.UserHandle, java.lang.String) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendOrderedBroadcast(android.content.Intent, java.lang.String) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendOrderedBroadcast(android.content.Intent, java.lang.String, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Context void sendOrderedBroadcast(android.content.Intent, java.lang.String, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendOrderedBroadcast(android.content.Intent, java.lang.String, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 3">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendOrderedBroadcast(android.content.Intent, java.lang.String, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 5">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendOrderedBroadcast(android.content.Intent, java.lang.String, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 6">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendOrderedBroadcastAsUser(android.content.Intent, android.os.UserHandle, java.lang.String, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendOrderedBroadcastAsUser(android.content.Intent, android.os.UserHandle, java.lang.String, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 4">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendOrderedBroadcastAsUser(android.content.Intent, android.os.UserHandle, java.lang.String, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 6">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendOrderedBroadcastAsUser(android.content.Intent, android.os.UserHandle, java.lang.String, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 7">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendStickyOrderedBroadcast(android.content.Intent, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 2">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendStickyOrderedBroadcast(android.content.Intent, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 4">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendStickyOrderedBroadcast(android.content.Intent, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 5">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendStickyOrderedBroadcastAsUser(android.content.Intent, android.os.UserHandle, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 3">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendStickyOrderedBroadcastAsUser(android.content.Intent, android.os.UserHandle, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 5">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void sendStickyOrderedBroadcastAsUser(android.content.Intent, android.os.UserHandle, android.content.BroadcastReceiver, android.os.Handler, int, java.lang.String, android.os.Bundle) 6">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void setTheme(int) 0">
+    <annotation name="android.support.annotation.StyleRes" />
+  </item>
+  <item name="android.content.Context void startActivity(android.content.Intent, android.os.Bundle) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void startIntentSender(android.content.IntentSender, android.content.Intent, int, int, int, android.os.Bundle) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.Context void unbindService(android.content.ServiceConnection) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.CursorLoader void dump(java.lang.String, java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]) 2">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Entity java.util.ArrayList&lt;android.content.Entity.NamedContentValues&gt; getSubValues()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent Intent(android.content.Intent) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.ComponentName resolveActivity(android.content.pm.PackageManager) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent addCategory(java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent addCategory(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent addFlags(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent cloneFilter()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent createChooser(android.content.Intent, java.lang.CharSequence)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent createChooser(android.content.Intent, java.lang.CharSequence) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent getIntent(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent getIntentOld(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent makeMainActivity(android.content.ComponentName)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent makeMainSelectorActivity(java.lang.String, java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent makeMainSelectorActivity(java.lang.String, java.lang.String) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent makeRestartActivityTask(android.content.ComponentName)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent parseIntent(android.content.res.Resources, org.xmlpull.v1.XmlPullParser, android.util.AttributeSet)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent parseIntent(android.content.res.Resources, org.xmlpull.v1.XmlPullParser, android.util.AttributeSet) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent parseIntent(android.content.res.Resources, org.xmlpull.v1.XmlPullParser, android.util.AttributeSet) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent parseIntent(android.content.res.Resources, org.xmlpull.v1.XmlPullParser, android.util.AttributeSet) 2">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent parseUri(java.lang.String, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putCharSequenceArrayListExtra(java.lang.String, java.util.ArrayList&lt;java.lang.CharSequence&gt;)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, android.os.Bundle)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, android.os.Parcelable)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, android.os.Parcelable[])">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, boolean)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, boolean[])">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, byte)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, byte[])">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, char)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, char[])">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, double)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, double[])">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, float)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, float[])">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, int[])">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, java.io.Serializable)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, java.lang.CharSequence)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, java.lang.CharSequence[])">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, java.lang.String[])">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, long)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, long[])">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, short)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtra(java.lang.String, short[])">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtras(android.content.Intent)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtras(android.content.Intent) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtras(android.os.Bundle)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putExtras(android.os.Bundle) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putIntegerArrayListExtra(java.lang.String, java.util.ArrayList&lt;java.lang.Integer&gt;)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putParcelableArrayListExtra(java.lang.String, java.util.ArrayList&lt;? extends android.os.Parcelable&gt;)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent putStringArrayListExtra(java.lang.String, java.util.ArrayList&lt;java.lang.String&gt;)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent replaceExtras(android.content.Intent)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent replaceExtras(android.content.Intent) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent replaceExtras(android.os.Bundle)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setAction(java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setClass(android.content.Context, java.lang.Class&lt;?&gt;)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setClassName(android.content.Context, java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setClassName(java.lang.String, java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setComponent(android.content.ComponentName)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setData(android.net.Uri)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setDataAndNormalize(android.net.Uri)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setDataAndNormalize(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setDataAndType(android.net.Uri, java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setDataAndTypeAndNormalize(android.net.Uri, java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setDataAndTypeAndNormalize(android.net.Uri, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setFlags(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setPackage(java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setType(java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.Intent setTypeAndNormalize(java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent android.content.pm.ActivityInfo resolveActivityInfo(android.content.pm.PackageManager, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent int fillIn(android.content.Intent, int)">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FILL_IN_ACTION, android.content.Intent.FILL_IN_DATA, android.content.Intent.FILL_IN_CATEGORIES, android.content.Intent.FILL_IN_COMPONENT, android.content.Intent.FILL_IN_PACKAGE, android.content.Intent.FILL_IN_SOURCE_BOUNDS, android.content.Intent.FILL_IN_SELECTOR, android.content.Intent.FILL_IN_CLIP_DATA}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Intent int fillIn(android.content.Intent, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent int fillIn(android.content.Intent, int) 1">
+    <annotation name="android.support.annotation.IntDef">
+      <val name="value" val="{android.content.Intent.FILL_IN_ACTION, android.content.Intent.FILL_IN_DATA, android.content.Intent.FILL_IN_CATEGORIES, android.content.Intent.FILL_IN_COMPONENT, android.content.Intent.FILL_IN_PACKAGE, android.content.Intent.FILL_IN_SOURCE_BOUNDS, android.content.Intent.FILL_IN_SELECTOR, android.content.Intent.FILL_IN_CLIP_DATA}" />
+      <val name="flag" val="true" />
+    </annotation>
+  </item>
+  <item name="android.content.Intent java.lang.Object clone()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent java.lang.String resolveType(android.content.ContentResolver) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent java.lang.String resolveType(android.content.Context) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent java.lang.String resolveTypeIfNeeded(android.content.ContentResolver) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent java.lang.String toURI()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent java.lang.String toUri(int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent void readFromParcel(android.os.Parcel) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent.FilterComparison FilterComparison(android.content.Intent) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent.FilterComparison android.content.Intent getIntent()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent.ShortcutIconResource android.content.Intent.ShortcutIconResource fromContext(android.content.Context, int)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent.ShortcutIconResource android.content.Intent.ShortcutIconResource fromContext(android.content.Context, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Intent.ShortcutIconResource android.content.Intent.ShortcutIconResource fromContext(android.content.Context, int) 1">
+    <annotation name="android.support.annotation.AnyRes" />
+  </item>
+  <item name="android.content.Intent.ShortcutIconResource void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter IntentFilter(android.content.IntentFilter) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter IntentFilter(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter IntentFilter(java.lang.String, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter IntentFilter(java.lang.String, java.lang.String) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter android.content.IntentFilter create(java.lang.String, java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter android.content.IntentFilter create(java.lang.String, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter android.content.IntentFilter create(java.lang.String, java.lang.String) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter boolean hasDataAuthority(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter int match(android.content.ContentResolver, android.content.Intent, boolean, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter int match(android.content.ContentResolver, android.content.Intent, boolean, java.lang.String) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter int matchDataAuthority(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter void addAction(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter void addCategory(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter void addDataAuthority(java.lang.String, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter void addDataPath(java.lang.String, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter void addDataScheme(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter void addDataType(java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter void dump(android.util.Printer, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter void readFromXml(org.xmlpull.v1.XmlPullParser) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter void writeToXml(org.xmlpull.v1.XmlSerializer) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter.AuthorityEntry AuthorityEntry(java.lang.String, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentFilter.AuthorityEntry int match(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentSender android.content.IntentSender readIntentSenderOrNullFromParcel(android.os.Parcel) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentSender void sendIntent(android.content.Context, int, android.content.Intent, android.content.IntentSender.OnFinished, android.os.Handler) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentSender void sendIntent(android.content.Context, int, android.content.Intent, android.content.IntentSender.OnFinished, android.os.Handler, java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentSender void writeIntentSenderOrNullToParcel(android.content.IntentSender, android.os.Parcel) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.IntentSender void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Loader Loader(android.content.Context) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Loader java.lang.String dataToString(D)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.Loader void dump(java.lang.String, java.io.FileDescriptor, java.io.PrintWriter, java.lang.String[]) 2">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.PeriodicSync PeriodicSync(android.accounts.Account, java.lang.String, android.os.Bundle, long) 2">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.PeriodicSync extras">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.PeriodicSync void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.RestrictionEntry void setChoiceEntries(android.content.Context, int) 1">
+    <annotation name="android.support.annotation.ArrayRes" />
+  </item>
+  <item name="android.content.RestrictionEntry void setChoiceValues(android.content.Context, int) 1">
+    <annotation name="android.support.annotation.ArrayRes" />
+  </item>
+  <item name="android.content.SearchRecentSuggestionsProvider android.database.Cursor query(android.net.Uri, java.lang.String[], java.lang.String, java.lang.String[], java.lang.String) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SearchRecentSuggestionsProvider android.net.Uri insert(android.net.Uri, android.content.ContentValues) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SearchRecentSuggestionsProvider int delete(android.net.Uri, java.lang.String, java.lang.String[]) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SearchRecentSuggestionsProvider java.lang.String getType(android.net.Uri)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SearchRecentSuggestionsProvider java.lang.String getType(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SharedPreferences java.lang.String getString(java.lang.String, java.lang.String)">
+    <annotation name="android.support.annotation.Nullable" />
+    <annotation name="org.jetbrains.annotations.Contract">
+      <val name="value" val="&quot;_,!null-&gt;!null&quot;" />
+    </annotation>
+  </item>
+  <item name="android.content.SharedPreferences java.lang.String getString(java.lang.String, java.lang.String) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.SharedPreferences java.util.Set&lt;java.lang.String&gt; getStringSet(java.lang.String, java.util.Set&lt;java.lang.String&gt;)">
+    <annotation name="android.support.annotation.Nullable" />
+    <annotation name="org.jetbrains.annotations.Contract">
+      <val name="value" val="&quot;_,!null-&gt;!null&quot;" />
+    </annotation>
+  </item>
+  <item name="android.content.SharedPreferences java.util.Set&lt;java.lang.String&gt; getStringSet(java.lang.String, java.util.Set&lt;java.lang.String&gt;) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.SharedPreferences.Editor android.content.SharedPreferences.Editor putString(java.lang.String, java.lang.String) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.SharedPreferences.Editor android.content.SharedPreferences.Editor putStringSet(java.lang.String, java.util.Set&lt;java.lang.String&gt;) 1">
+    <annotation name="android.support.annotation.Nullable" />
+  </item>
+  <item name="android.content.SyncAdapterType SyncAdapterType(android.os.Parcel) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SyncAdapterType android.content.SyncAdapterType newKey(java.lang.String, java.lang.String)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SyncAdapterType void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SyncInfo void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SyncResult ALREADY_IN_PROGRESS">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SyncResult java.lang.String toDebugString()">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SyncResult stats">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SyncResult void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SyncStats SyncStats(android.os.Parcel) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.SyncStats void writeToParcel(android.os.Parcel, int) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="android.content.UriMatcher int match(android.net.Uri) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+</root>
+

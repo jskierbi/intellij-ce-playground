@@ -1,0 +1,14 @@
+<resources>
+  <string name="my_string">abacaba</string>
+  <string name="my_string1">abacaba</string>
+  <style name="Theme.MyCustomStyle" parent="android:style/Theme.Dialog"></style>
+  <declare-styleable name="MyStyleable">
+    <attr name="myAttr1" format="string"/>
+    <attr name="android:text"/>
+  </declare-styleable>
+  <attr name="myAttr2" format="string"/>
+  <plurals name="plural1">
+  </plurals>
+  <fraction name="my_fraction1">1.0%</fraction>
+  <item name="my_fraction2" type="fraction">2.0%</item>
+</resources>

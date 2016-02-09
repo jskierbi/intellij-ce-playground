@@ -1,0 +1,60 @@
+buildscript {
+  repositories {
+    jcenter()
+    if (System.getenv("MAVEN_URL") != null) {
+      maven {url System.getenv("MAVEN_URL")}
+    }
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:0.14.4'
+  }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+  jcenter()
+}
+
+android {
+  compileSdkVersion 18
+  buildToolsVersion "19.1.0"
+
+  defaultConfig {
+    minSdkVersion 8
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+    }
+  }
+
+  productFlavors {
+    flavor1 {
+      applicationId "com.example.flavor1"
+    }
+  }
+
+  signingConfigs {
+    myConfig {
+      storeFile file("other.keystore")
+    }
+  }
+
+  sourceSets {
+    main {
+      aidl.srcDirs = ['src/main/aidl', 'src/main/aidl2/']
+    }
+    debug.setRoot('src/test/java')
+  }
+
+  lintOptions {
+    quiet true
+  }
+
+  // this should not be resolved as it only applies to android libraries
+  if (false) {
+    publishNonDefault true
+  }
+}

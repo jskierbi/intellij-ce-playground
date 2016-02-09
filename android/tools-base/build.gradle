@@ -1,0 +1,7 @@
+subprojects { Project project ->
+    // only configure leaf projects.
+    if (!project.getSubprojects().isEmpty()) return
+
+    apply from: "$rootDir/buildSrc/base/baseJava.gradle"
+}
+

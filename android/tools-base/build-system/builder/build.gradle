@@ -1,0 +1,103 @@
+apply plugin: 'java'
+apply plugin: 'clone-artifacts'
+
+evaluationDependsOn(':base:builder-model')
+evaluationDependsOn(':base:builder-test-api')
+
+dependencies {
+    compile project(':base:builder-model')
+    compile project(':base:builder-test-api')
+
+    compile project(':base:sdklib')
+    compile project(':base:sdk-common')
+    compile project(':base:common')
+    compile project(':base:manifest-merger')
+    compile project(':base:ddmlib')
+
+    compile 'com.squareup:javawriter:2.5.0'
+    compile 'org.bouncycastle:bcpkix-jdk15on:1.48'
+    compile 'org.bouncycastle:bcprov-jdk15on:1.48'
+    compile 'org.ow2.asm:asm:5.0.3'
+    compile 'org.ow2.asm:asm-tree:5.0.3'
+    compile 'com.android.tools.jack:jack-api:0.9.0'
+    compile 'com.android.tools.jill:jill-api:0.9.0'
+
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-all:1.9.5'
+    testCompile project(':base:testutils')
+    testCompile project(':base:sdklib').sourceSets.test.output
+}
+
+test {
+    maxParallelForks = Runtime.runtime.availableProcessors() / 2
+}
+
+group = 'com.android.tools.build'
+archivesBaseName = 'builder'
+version = rootProject.ext.buildVersion
+
+project.ext.pomName = 'Android Builder library'
+project.ext.pomDesc = 'Library to build Android applications.'
+
+apply from: "$rootDir/buildSrc/base/publish.gradle"
+apply from: "$rootDir/buildSrc/base/bintray.gradle"
+apply from: "$rootDir/buildSrc/base/javadoc.gradle"
+
+jar.manifest.attributes("Builder-Version": version)
+
+def generated = new File("${project.buildDir}/generated/java")
+
+sourceSets {
+    main {
+        java {
+            srcDir generated
+        }
+    }
+}
+
+task generateVersionConstantsJava {
+    inputs.property("apiVersion", apiVersion)
+    inputs.property("version", version)
+    ext.versionFile = new File(generated, "com/android/builder/Version.java")
+    outputs.file(versionFile)
+}
+generateVersionConstantsJava << {
+    versionFile.parentFile.mkdirs()
+    versionFile.text = """
+package com.android.builder;
+
+public final class Version {
+    private Version() {}
+    public static final String ANDROID_GRADLE_PLUGIN_VERSION = "$version";
+    public static final int BUILDER_MODEL_API_VERSION = $apiVersion;
+}
+"""
+}
+
+tasks.compileJava.dependsOn generateVersionConstantsJava
+
+configurations {
+    provided
+    sourcesProvided
+}
+
+dependencies {
+    provided(project(':base:profile')) {
+        transitive = false
+    }
+    sourcesProvided(project(path:':base:profile', configuration:'sourcesOnly')) {
+        transitive = false
+    }
+}
+
+sourceSets.main.compileClasspath += [configurations.provided]
+sourceSets.test.runtimeClasspath += [configurations.provided]
+tasks.compileJava.dependsOn(configurations.provided)
+tasks.sourcesJar.dependsOn(configurations.sourcesProvided)
+
+tasks.jar {
+    from({zipTree(configurations.provided.singleFile)})
+}
+tasks.sourcesJar {
+    from({zipTree(configurations.sourcesProvided.singleFile)})
+}

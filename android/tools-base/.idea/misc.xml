@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ASMPluginConfiguration">
+    <asm skipDebug="false" skipFrames="false" skipCode="false" expandFrames="false" />
+    <groovy codeStyle="LEGACY" />
+  </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+    <list size="11">
+      <item index="0" class="java.lang.String" itemvalue="org.gradle.api.tasks.TaskAction" />
+      <item index="1" class="java.lang.String" itemvalue="org.gradle.model.Defaults" />
+      <item index="2" class="java.lang.String" itemvalue="org.gradle.model.Finalize" />
+      <item index="3" class="java.lang.String" itemvalue="org.gradle.model.Model" />
+      <item index="4" class="java.lang.String" itemvalue="org.gradle.model.Mutate" />
+      <item index="5" class="java.lang.String" itemvalue="org.gradle.model.Validate" />
+      <item index="6" class="java.lang.String" itemvalue="org.gradle.platform.base.BinaryTasks" />
+      <item index="7" class="java.lang.String" itemvalue="org.gradle.platform.base.BinaryType" />
+      <item index="8" class="java.lang.String" itemvalue="org.gradle.platform.base.ComponentBinaries" />
+      <item index="9" class="java.lang.String" itemvalue="org.gradle.platform.base.ComponentType" />
+      <item index="10" class="java.lang.String" itemvalue="org.gradle.platform.base.LanguageType" />
+    </list>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <type id="android" />
+  </component>
+  <component name="IdProvider" IDEtalkID="DCEF6D5FAEEAA0E5B2200920077168C7" />
+  <component name="NullableNotNullManager">
+    <option name="myDefaultNullable" value="com.android.annotations.Nullable" />
+    <option name="myDefaultNotNull" value="com.android.annotations.NonNull" />
+    <option name="myNullables">
+      <value>
+        <list size="4">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.Nullable" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nullable" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.Nullable" />
+          <item index="3" class="java.lang.String" itemvalue="com.android.annotations.Nullable" />
+        </list>
+      </value>
+    </option>
+    <option name="myNotNulls">
+      <value>
+        <list size="4">
+          <item index="0" class="java.lang.String" itemvalue="org.jetbrains.annotations.NotNull" />
+          <item index="1" class="java.lang.String" itemvalue="javax.annotation.Nonnull" />
+          <item index="2" class="java.lang.String" itemvalue="edu.umd.cs.findbugs.annotations.NonNull" />
+          <item index="3" class="java.lang.String" itemvalue="com.android.annotations.NonNull" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

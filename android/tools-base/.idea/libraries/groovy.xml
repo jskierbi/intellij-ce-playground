@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="groovy">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../out/gradle-dist-link/lib/groovy-all-2.3.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

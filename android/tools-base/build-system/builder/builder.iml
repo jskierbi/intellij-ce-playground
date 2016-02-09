@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module relativePaths="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../out/build/base/builder/build/generated/java">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../out/build/base/builder/build/generated/java" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="profile" exported="" />
+    <orderEntry type="module" module-name="builder-test-api" exported="" />
+    <orderEntry type="module" module-name="builder-model" exported="" />
+    <orderEntry type="module" module-name="testutils" scope="TEST" />
+    <orderEntry type="module" module-name="ddmlib" exported="" />
+    <orderEntry type="library" exported="" name="javawriter" level="project" />
+    <orderEntry type="library" exported="" name="bouncy-castle" level="project" />
+    <orderEntry type="library" name="mockito" level="project" />
+    <orderEntry type="module" module-name="sdk-common-base" />
+    <orderEntry type="module" module-name="manifest-merger-base" />
+    <orderEntry type="library" exported="" name="asm-tools" level="project" />
+    <orderEntry type="library" scope="TEST" name="JUnit4" level="project" />
+    <orderEntry type="library" name="jack-api" level="project" />
+    <orderEntry type="library" name="jill-api" level="project" />
+  </component>
+</module>

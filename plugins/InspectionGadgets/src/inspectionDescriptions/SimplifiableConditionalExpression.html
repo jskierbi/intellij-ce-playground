@@ -1,0 +1,17 @@
+<html>
+<body>
+Reports conditional expressions of the form<br>
+<code>condition ? true : foo</code>,<br>
+<code>condition ? false : foo</code>,<br>
+<code>condition ? foo : !foo</code> and<br>
+<code>condition ? !foo : foo</code>.<br>
+These expressions may be safely simplified to<br>
+<code>condition || foo</code>,<br>
+<code>!condition && foo</code>,<br>
+<code>condition == foo</code> and<br>
+<code>condition != foo</code>, respectively.
+<!-- tooltip end -->
+<p>
+
+</body>
+</html>

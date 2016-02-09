@@ -1,0 +1,5 @@
+<root>
+    <item name='org.apache.velocity.servlet.VelocityServlet org.apache.velocity.Template handleRequest(org.apache.velocity.context.Context) 0'>
+        <annotation name='org.jetbrains.annotations.Nullable'/>
+    </item>
+</root>

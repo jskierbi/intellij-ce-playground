@@ -1,0 +1,7 @@
+{
+  "name": "restApiDocGenerator",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-apidoc": "^0.1.4"
+  }
+}

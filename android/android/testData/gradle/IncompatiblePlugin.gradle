@@ -1,0 +1,14 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath <error>'com.android.tools.build:gradle:0.1.0'</error>
+  }
+}
+
+allprojects {
+  repositories {
+    jcenter()
+  }
+}

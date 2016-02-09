@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <integer name="config_mediumAnimTime">400</integer>
+
+  <style name="MediaButton">
+    <item name="android:textColor">@color/my_white</item>
+    <item name="android:background">@null</item>
+    <item name="android:layout_width">71dip</item>
+    <item name="android:layout_height">52dip</item>
+  </style>
+
+  <style name="Theme">
+      <item name="textAppearanceMedium">@android:style/TextAppearance.Medium</item>
+      <item name="textColorPrimary">@android:color/primary_text_dark</item>
+  </style>
+
+  <style name="Theme.Holo.Light" parent="Theme">
+  </style>
+
+  <style name="Theme.Holo1.Light">
+  </style>
+
+  <color name="my_white">#ffffff</color>
+
+  <string name="cancel">cancel</string>
+  <string name="private_str">private</string>
+  <string name="defaultMsisdnAlphaTag"></string>
+
+  <color name="primary_text_dark">#000000</color>
+  <style name="TextAppearance.Medium">
+      <item name="android:textSize">18sp</item>
+      <item name="android:textStyle">normal</item>
+      <item name="android:textColor">?textColorPrimary</item>
+  </style>
+
+  <style name="TextAppearance">
+      <item name="android:textColor">?textColorPrimary</item>
+      <item name="android:textColorHighlight">#FFFF9200</item>
+      <item name="android:textColorHint">?textColorHint</item>
+      <item name="android:textColorLink">#5C5CFF</item>
+      <item name="android:textSize">16sp</item>
+      <item name="android:textStyle">normal</item>
+  </style>
+
+</resources>

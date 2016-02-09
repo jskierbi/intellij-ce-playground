@@ -1,0 +1,13 @@
+<resources>
+  <style name="mySt<caret>yle">
+  </style>
+
+  <style name="myStyle.s.a">
+  </style>
+
+  <style name="st" parent="myStyle.s.a">
+  </style>
+
+  <style name="st1" parent="@style/myStyle.s.a">
+  </style>
+</resources>
