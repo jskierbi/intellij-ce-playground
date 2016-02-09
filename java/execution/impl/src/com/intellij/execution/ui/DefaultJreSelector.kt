@@ -39,8 +39,6 @@ import com.intellij.openapi.project.Project
 import com.intellij.openapi.roots.ModuleRootManager
 import com.intellij.openapi.roots.ProjectRootManager
 import com.intellij.openapi.util.Pair
-import com.intellij.openapi.util.component1
-import com.intellij.openapi.util.component2
 import com.intellij.ui.EditorTextFieldWithBrowseButton
 
 /**
@@ -66,7 +64,9 @@ abstract class DefaultJreSelector {
   }
 
   fun getDescriptionString(): String {
-    val (name, description) = getNameAndDescription()
+    val pair = getNameAndDescription()
+    val name = pair.first
+    val description = pair.second
     return " (${name ?: "<no JRE>"} - $description)"
   }
 

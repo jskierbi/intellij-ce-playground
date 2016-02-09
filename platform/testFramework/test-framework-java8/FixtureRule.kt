@@ -153,7 +153,7 @@ class RuleChain(vararg val rules: TestRule) : TestRule {
   override fun apply(base: Statement, description: Description): Statement {
     var statement = base
     var errors: MutableList<Throwable>? = null
-    for (i in (rules.size() - 1) downTo 0) {
+    for (i in (rules.size - 1) downTo 0) {
       try {
         statement = rules[i].apply(statement, description)
       }

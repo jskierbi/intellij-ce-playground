@@ -30,7 +30,7 @@ internal class FunctionScopesValueGroup(private val functionValue: FunctionValue
     functionValue.resolve()
       .done(node) {
           val scopes = it.scopes
-          if (scopes == null || scopes.size() == 0) {
+          if (scopes == null || scopes.size == 0) {
             node.addChildren(XValueChildrenList.EMPTY, true)
           }
           else {
@@ -39,7 +39,7 @@ internal class FunctionScopesValueGroup(private val functionValue: FunctionValue
         }
       .rejected {
         Promise.logError(LOG, it)
-        node.setErrorMessage(it.getMessage()!!)
+        node.setErrorMessage(it.message!!)
       }
   }
 }

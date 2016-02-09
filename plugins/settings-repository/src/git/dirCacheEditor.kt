@@ -29,13 +29,13 @@ import org.jetbrains.settingsRepository.removeWithParentsIfEmpty
 import java.io.File
 import java.io.FileInputStream
 import java.text.MessageFormat
-import java.util.Comparator
+import java.util.*
 
 private val EDIT_CMP = object : Comparator<PathEdit> {
   override fun compare(o1: PathEdit, o2: PathEdit): Int {
     val a = o1.path
     val b = o2.path
-    return DirCache.cmp(a, a.size(), b, b.size())
+    return DirCache.cmp(a, a.size, b, b.size)
   }
 }
 
@@ -68,7 +68,7 @@ public class DirCacheEditor(edits: List<PathEdit>, private val repository: Repos
     val maxIndex = cache.entryCount
     var lastIndex = 0
     for (edit in edits) {
-      var entryIndex = cache.findEntry(edit.path, edit.path.size())
+      var entryIndex = cache.findEntry(edit.path, edit.path.size)
       val missing = entryIndex < 0
       if (entryIndex < 0) {
         entryIndex = -(entryIndex + 1)
@@ -83,7 +83,7 @@ public class DirCacheEditor(edits: List<PathEdit>, private val repository: Repos
         continue
       }
       if (edit is DeleteDirectory) {
-        lastIndex = cache.nextEntry(edit.path, edit.path.size(), entryIndex)
+        lastIndex = cache.nextEntry(edit.path, edit.path.size, entryIndex)
         continue
       }
 
@@ -137,7 +137,7 @@ abstract class PathEditBase(override final val path: ByteArray) : PathEdit
 private fun encodePath(path: String): ByteArray {
   val bytes = byteBufferToBytes(Constants.CHARSET.encode(path))
   if (SystemInfo.isWindows) {
-    for (i in 0..bytes.size() - 1) {
+    for (i in 0..bytes.size - 1) {
       if (bytes[i].toChar() == '\\') {
         bytes[i] = '/'.toByte()
       }
@@ -167,7 +167,7 @@ class AddFile(private val pathString: String) : PathEditBase(encodePath(pathStri
   }
 }
 
-class AddLoadedFile(path: String, private val content: ByteArray, private val size: Int = content.size(), private val lastModified: Long = System.currentTimeMillis()) : PathEditBase(encodePath(path)) {
+class AddLoadedFile(path: String, private val content: ByteArray, private val size: Int = content.size, private val lastModified: Long = System.currentTimeMillis()) : PathEditBase(encodePath(path)) {
   override fun apply(entry: DirCacheEntry, repository: Repository) {
     entry.fileMode = FileMode.REGULAR_FILE
     entry.length = size
@@ -236,7 +236,7 @@ public fun Repository.deleteAllFiles(deletedSet: MutableSet<String>? = null, fro
   }
 
   if (fromWorkingTree) {
-    val files = workTree.listFiles { it.name != Constants.DOT_GIT }
+    val files = workTree.listFiles { it -> it.name != Constants.DOT_GIT }
     if (files != null) {
       for (file in files) {
         FileUtil.delete(file)
@@ -245,7 +245,7 @@ public fun Repository.deleteAllFiles(deletedSet: MutableSet<String>? = null, fro
   }
 }
 
-public fun Repository.writePath(path: String, bytes: ByteArray, size: Int = bytes.size()) {
+public fun Repository.writePath(path: String, bytes: ByteArray, size: Int = bytes.size) {
   edit(AddLoadedFile(path, bytes, size))
   FileUtil.writeToFile(File(workTree, path), bytes, 0, size)
 }

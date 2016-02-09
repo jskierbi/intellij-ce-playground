@@ -30,7 +30,7 @@ fun copyLocalConfig(storageManager: StateStorageManagerImpl = ApplicationManager
   val streamProvider = storageManager.streamProvider!! as IcsManager.IcsStreamProvider
 
   val fileToComponents = getExportableComponentsMap(true, false, storageManager)
-  for (file in fileToComponents.keySet()) {
+  for (file in fileToComponents.keys) {
     val absolutePath = FileUtilRt.toSystemIndependentName(file.absolutePath)
     var fileSpec = storageManager.collapseMacros(absolutePath)
     LOG.assertTrue(!fileSpec.contains(ROOT_CONFIG))
@@ -45,7 +45,7 @@ fun copyLocalConfig(storageManager: StateStorageManagerImpl = ApplicationManager
     val roamingType = getRoamingType(fileToComponents.get(file)!!)
     if (file.isFile) {
       val fileBytes = FileUtil.loadFileBytes(file)
-      streamProvider.doSave(fileSpec, fileBytes, fileBytes.size(), roamingType)
+      streamProvider.doSave(fileSpec, fileBytes, fileBytes.size, roamingType)
     }
     else {
       saveDirectory(file, fileSpec, roamingType, streamProvider)
@@ -60,7 +60,7 @@ private fun saveDirectory(parent: File, parentFileSpec: String, roamingType: Roa
       val childFileSpec = parentFileSpec + '/' + file.name
       if (file.isFile) {
         val fileBytes = FileUtil.loadFileBytes(file)
-        streamProvider.doSave(childFileSpec, fileBytes, fileBytes.size(), roamingType)
+        streamProvider.doSave(childFileSpec, fileBytes, fileBytes.size, roamingType)
       }
       else {
         saveDirectory(file, childFileSpec, roamingType, streamProvider)

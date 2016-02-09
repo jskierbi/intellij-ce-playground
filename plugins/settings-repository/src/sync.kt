@@ -35,7 +35,7 @@ import java.util.*
 
 private val LOG_1 = org.jetbrains.settingsRepository.LOG
 
-class SyncManager(private val icsManager: IcsManager, private val autoSyncManager: AutoSyncManager) {
+class SyncManager(val icsManager: IcsManager, val autoSyncManager: AutoSyncManager) {
   @Volatile var writeAndDeleteProhibited = false
     private set
 
@@ -200,6 +200,6 @@ enum class SyncType {
   OVERWRITE_REMOTE
 }
 
-class NoRemoteRepositoryException(cause: Throwable) : RuntimeException(cause.getMessage(), cause)
+class NoRemoteRepositoryException(cause: Throwable) : RuntimeException(cause.message, cause)
 
 class CannotResolveConflictInTestMode() : RuntimeException()

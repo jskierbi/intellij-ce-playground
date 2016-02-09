@@ -111,7 +111,7 @@ public abstract class MergeTestBase : DiffTestCase() {
     private val undoManager = UndoManager.getInstance(project!!)
 
     public fun change(num: Int): TextMergeChange {
-      if (changes.size() < num) throw Exception("changes: ${changes.size()}, index: $num")
+      if (changes.size < num) throw Exception("changes: ${changes.size}, index: $num")
       return changes.get(num)
     }
 
@@ -123,7 +123,7 @@ public abstract class MergeTestBase : DiffTestCase() {
 
     public fun runActionByTitle(name: String): Boolean {
       val action = actions.filter { name.equals(it.getTemplatePresentation().getText()) }
-      assertTrue(action.size() == 1, action.toString())
+      assertTrue(action.size == 1, action.toString())
       return runAction(action.get(0))
     }
 
@@ -219,7 +219,7 @@ public abstract class MergeTestBase : DiffTestCase() {
       assertTrue(index1 >= 0, "content - '\n$oldContent\n'\ntext - '\n$text'")
       val index2 = StringUtil.indexOf(text, oldContent, index1 + 1)
       assertTrue(index2 == -1, "content - '\n$oldContent\n'\ntext - '\n$text'")
-      return Couple(index1, index1 + oldContent.length())
+      return Couple(index1, index1 + oldContent.length)
     }
 
     //
@@ -279,7 +279,7 @@ public abstract class MergeTestBase : DiffTestCase() {
 
     public fun assertChangesCount(expected: Int) {
       if (expected == -1) return
-      val actual = activeChanges().size()
+      val actual = activeChanges().size
       assertEquals(expected, actual)
     }
 
@@ -401,7 +401,7 @@ public abstract class MergeTestBase : DiffTestCase() {
     }
 
     override fun equals(other: Any?): Boolean {
-      if (this identityEquals other) return true
+      if (this === other) return true
       if (other !is ViewerState) return false
 
       if (!StringUtil.equals(content, other.content)) return false
@@ -416,7 +416,7 @@ public abstract class MergeTestBase : DiffTestCase() {
                                    private val ends: Trio<Int>,
                                    private val resolved: SidesState) {
       override fun equals(other: Any?): Boolean {
-        if (this identityEquals other) return true
+        if (this === other) return true
         if (other !is ChangeState) return false
 
         if (!StringUtil.equals(content, other.content)) return false

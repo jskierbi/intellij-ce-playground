@@ -16,12 +16,9 @@
 package com.intellij.diff.merge
 
 import com.intellij.diff.DiffTestCase
-import com.intellij.diff.assertEquals
 import com.intellij.diff.assertTrue
-import com.intellij.diff.merge.MergeTestBase.TestBuilder
 import com.intellij.diff.util.Side
 import com.intellij.diff.util.ThreeSide
-import kotlin.test.fail
 
 public class MergeAutoTest : MergeTestBase() {
   companion object {
@@ -36,7 +33,7 @@ public class MergeAutoTest : MergeTestBase() {
   private fun doUndoTest(seed: Long, runs: Int, maxLength: Int) {
     doTest(seed, runs, maxLength) { text1, text2, text3, debugData ->
       testN(text1, text2, text3) {
-        if (changes.size() == 0) {
+        if (changes.size == 0) {
           assertEquals(text1, text2)
           assertEquals(text1, text3)
           assertEquals(text2, text3)
@@ -62,7 +59,7 @@ public class MergeAutoTest : MergeTestBase() {
   }
 
   private fun TestBuilder.doApply(): Unit {
-    val index = RNG.nextInt(changes.size())
+    val index = RNG.nextInt(changes.size)
     val change = changes.get(index)
 
     val side = Side.fromLeft(RNG.nextBoolean())
@@ -72,7 +69,7 @@ public class MergeAutoTest : MergeTestBase() {
   }
 
   private fun TestBuilder.doIgnore(): Unit {
-    val index = RNG.nextInt(changes.size())
+    val index = RNG.nextInt(changes.size)
     val change = changes.get(index)
 
     val side = Side.fromLeft(RNG.nextBoolean())
@@ -113,7 +110,7 @@ public class MergeAutoTest : MergeTestBase() {
   }
 
   private fun checkChangesRangeOrdering(changes: List<TextMergeChange>) {
-    for (i in 1..changes.size() - 1) {
+    for (i in 1..changes.size - 1) {
       val lastEnd = changes.get(i - 1).getEndLine(ThreeSide.BASE)
       val start = changes.get(i).getStartLine(ThreeSide.BASE)
       assertTrue(lastEnd <= start, "lastEnd: $lastEnd, start: $start")

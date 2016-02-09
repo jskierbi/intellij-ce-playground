@@ -17,20 +17,15 @@ package git4idea.rebase
 
 import com.intellij.dvcs.repo.Repository
 import com.intellij.notification.Notification
-import com.intellij.notification.NotificationType.ERROR
-import com.intellij.notification.NotificationType.INFORMATION
-import com.intellij.notification.NotificationType.WARNING
+import com.intellij.notification.NotificationType.*
 import com.intellij.openapi.vcs.AbstractVcsHelper
 import com.intellij.openapi.vcs.Executor
-import git4idea.GitUtil
 import git4idea.commands.Git
 import git4idea.repo.GitRepository
 import git4idea.test.*
 import git4idea.test.GitExecutor.cd
 import git4idea.test.GitExecutor.git
 import git4idea.test.GitTestUtil.assertNotification
-import kotlin.test.assertEquals
-import kotlin.test.assertFalse
 
 public abstract class GitRebaseBaseTest : GitPlatformTest() {
 
@@ -60,60 +55,60 @@ public abstract class GitRebaseBaseTest : GitPlatformTest() {
   override fun getDebugLogCategories() = listOf("#" + GitRebaseProcess::class.java.name)
 
   protected fun GitRepository.`diverge feature and master`() {
-    build(this) {
-      master {
-        0()
-        1()
-      }
-      feature(0) {
-        2()
-      }
-    }
+//    build(this) {
+//      master {
+//        0()
+//        1()
+//      }
+//      feature(0) {
+//        2()
+//      }
+//    }
   }
 
   protected fun GitRepository.`place feature above master`() {
-    build(this) {
-      master {
-        0()
-        1()
-      }
-      feature {
-        2()
-      }
-    }
+//    build(this) {
+//      master {
+//        0()
+//        1()
+//      }
+//      feature {
+//        2()
+//      }
+//    }
   }
 
   protected fun GitRepository.`place feature below master`() {
-    build(this) {
-      master {
-        0()
-        1()
-      }
-      feature(0) {
-      }
-    }
+//    build(this) {
+//      master {
+//        0()
+//        1()
+//      }
+//      feature(0) {
+//      }
+//    }
   }
 
   protected fun GitRepository.`place feature on master`() {
-    build(this) {
-      master {
-        0()
-        1()
-      }
-      feature {}
-    }
+//    build(this) {
+//      master {
+//        0()
+//        1()
+//      }
+//      feature {}
+//    }
   }
 
   protected fun GitRepository.`prepare simple conflict`() {
-    build(this) {
-      master {
-        0("c.txt")
-        1("c.txt")
-      }
-      feature(0) {
-        2("c.txt")
-      }
-    }
+//    build(this) {
+//      master {
+//        0("c.txt")
+//        1("c.txt")
+//      }
+//      feature(0) {
+//        2("c.txt")
+//      }
+//    }
   }
 
   protected fun assertSuccessfulNotification(message: String) {
@@ -131,16 +126,16 @@ public abstract class GitRebaseBaseTest : GitPlatformTest() {
   }
 
   protected fun GitRepository.`make rebase fail on 2nd commit`() {
-    build(this) {
-      master {
-        0()
-        1("m.txt")
-      }
-      feature(0) {
-        2()
-        3("m.txt")
-      }
-    }
+//    build(this) {
+//      master {
+//        0()
+//        1("m.txt")
+//      }
+//      feature(0) {
+//        2()
+//        3("m.txt")
+//      }
+//    }
     `make rebase fail after resolving conflicts`()
   }
 
@@ -171,8 +166,8 @@ public abstract class GitRebaseBaseTest : GitPlatformTest() {
 
   protected fun assertNotRebased(feature: String, master: String, repository: GitRepository) {
     cd(repository)
-    assertFalse(git("rev-parse " + master) == git("merge-base $feature $master"),
-                "$feature is unexpectedly rebased on $master" + GitUtil.mention(repository))
+//    assertFalse(git("rev-parse " + master) == git("merge-base $feature $master"),
+//                "$feature is unexpectedly rebased on $master" + GitUtil.mention(repository))
   }
 
   protected fun assertNoRebaseInProgress(repository: GitRepository) {

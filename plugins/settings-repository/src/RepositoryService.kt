@@ -43,7 +43,7 @@ public interface RepositoryService {
 
   public fun checkFileRepo(url: String, messageParent: Container): Boolean {
     val suffix = "/${Constants.DOT_GIT}"
-    val file = File(if (url.endsWith(suffix)) url.substring(0, url.length() - suffix.length()) else url)
+    val file = File(if (url.endsWith(suffix)) url.substring(0, url.length - suffix.length) else url)
     if (file.exists()) {
       if (!file.isDirectory) {
         //noinspection DialogTitleCapitalization
@@ -65,7 +65,7 @@ public interface RepositoryService {
         return true
       }
       catch (e: IOException) {
-        Messages.showErrorDialog(messageParent, icsMessage("init.failed.message", e.getMessage()), icsMessage("init.failed.title"))
+        Messages.showErrorDialog(messageParent, icsMessage("init.failed.message", e.message), icsMessage("init.failed.title"))
         return false
       }
     }

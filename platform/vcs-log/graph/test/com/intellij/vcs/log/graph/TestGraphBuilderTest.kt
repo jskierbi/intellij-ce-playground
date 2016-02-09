@@ -15,7 +15,7 @@
  */
 package com.intellij.vcs.log.graph
 
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.Test
 
 
@@ -29,7 +29,7 @@ class TestGraphBuilderTest : AbstractTestWithTextFile("testGraphBuilder") {
   @Test fun simple() = runTest("simple") {
     1(2)
     2(3)
-    3()
+//    3()
   }
 
   @Test fun simpleManyNodes() = runTest("simpleManyNodes") {
@@ -41,7 +41,7 @@ class TestGraphBuilderTest : AbstractTestWithTextFile("testGraphBuilder") {
     10(11)
     5(8, 11)
     8(11)
-    11()
+//    11()
   }
 
   @Test fun specialEdges() = runTest("specialEdges") {
@@ -53,7 +53,7 @@ class TestGraphBuilderTest : AbstractTestWithTextFile("testGraphBuilder") {
   @Test fun specialNodes() = runTest("specialNodes") {
     2.U(3, 4)
     3.UNM(4.dot)
-    4.U()
-    100.NOT_LOAD()
+//    4.U()
+//    100.NOT_LOAD()
   }
 }

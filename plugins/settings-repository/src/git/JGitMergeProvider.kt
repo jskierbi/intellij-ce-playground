@@ -28,11 +28,11 @@ import org.jetbrains.jgit.dirCache.deletePath
 import org.jetbrains.jgit.dirCache.writePath
 import org.jetbrains.settingsRepository.RepositoryVirtualFile
 import java.nio.CharBuffer
-import java.util.ArrayList
+import java.util.*
 
 internal fun conflictsToVirtualFiles(map: Map<String, Any>): MutableList<VirtualFile> {
-  val result = ArrayList<VirtualFile>(map.size())
-  for (path in map.keySet()) {
+  val result = ArrayList<VirtualFile>(map.size)
+  for (path in map.keys) {
     result.add(RepositoryVirtualFile(path))
   }
   return result
@@ -61,7 +61,7 @@ class JGitMergeProvider<T>(private val repository: Repository, private val confl
     }
   }
 
-  private fun addFile(bytes: ByteArray, file: VirtualFile, size: Int = bytes.size()) {
+  private fun addFile(bytes: ByteArray, file: VirtualFile, size: Int = bytes.size) {
     repository.writePath(file.path, bytes, size)
   }
 
@@ -78,7 +78,7 @@ class JGitMergeProvider<T>(private val repository: Repository, private val confl
 
   private fun getContentOrEmpty(path: String, index: Int) = conflicts.pathToContent(path, index) ?: ArrayUtil.EMPTY_BYTE_ARRAY
 
-  private inner class JGitMergeSession : MergeSession {
+  inner class JGitMergeSession : MergeSession {
     override fun getMergeInfoColumns(): Array<ColumnInfo<out Any?, out Any?>> {
       return arrayOf(StatusColumn(false), StatusColumn(true))
     }

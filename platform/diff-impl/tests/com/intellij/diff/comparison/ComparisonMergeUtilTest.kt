@@ -16,170 +16,170 @@
 package com.intellij.diff.comparison
 
 public class ComparisonMergeUtilTest : ComparisonMergeUtilTestBase() {
-  public fun testSimpleCases() {
-    chars {
-      ("" - "" - "")
-      ("" - "" - "").matching()
-      changes()
-      test()
-    }
-
-    chars {
-      ("xyz" - "xyz" - "xyz")
-      ("   " - "   " - "   ").matching()
-      changes()
-      test()
-    }
-
-    chars {
-      ("" - "" - "x")
-      ("" - "" - "-").matching()
-      changes(mod(0, 0, 0, 0, 0, 1))
-      test()
-    }
-
-    chars {
-      ("x" - "yx" - "x")
-      (" " - "- " - " ").matching()
-      test()
-    }
-
-    chars {
-      ("x" - "xy" - "x")
-      (" " - " -" - " ").matching()
-      test()
-    }
-
-    chars {
-      ("xyz" - "xYz" - "xyz")
-      (" - " - " - " - " - ").matching()
-      test()
-    }
-
-    chars {
-      ("xyz" - "XyZ" - "xyz")
-      ("- -" - "- -" - "- -").matching()
-      test()
-    }
-  }
-
-  public fun testConflictTYpes() {
-    chars {
-      ("abcd" - "abcd" - "abXcd")
-      ("    " - "    " - "  -  ").matching()
-      test()
-    }
-
-    chars {
-      ("abXcd" - "abcd" - "abXcd")
-      ("  -  " - "    " - "  -  ").matching()
-      test()
-    }
-
-    chars {
-      ("abcd" - "abXcd" - "abXcd")
-      ("    " - "  -  " - "  -  ").matching()
-      test()
-    }
-
-    chars {
-      ("abcd" - "abXcd" - "abcd")
-      ("    " - "  -  " - "    ").matching()
-      test()
-    }
-
-    chars {
-      ("abcd" - "abXcd" - "abYcd")
-      ("    " - "  -  " - "  -  ").matching()
-      test()
-    }
-
-    chars {
-      ("abXcd" - "abXcd" - "abYcd")
-      ("  -  " - "  -  " - "  -  ").matching()
-      test()
-    }
-
-    chars {
-      ("abYcd" - "abXcd" - "abYcd")
-      ("  -  " - "  -  " - "  -  ").matching()
-      test()
-    }
-
-    chars {
-      ("abYcd" - "abXcd" - "abZcd")
-      ("  -  " - "  -  " - "  -  ").matching()
-      test()
-    }
-
-    chars {
-      ("abXcd" - "abcd" - "abYcd")
-      ("  -  " - "    " - "  -  ").matching()
-      test()
-    }
-  }
-
-  public fun testBoundaryConflicts() {
-    chars {
-      ("abcd" - "abcd" - "abcdx")
-      ("    " - "    " - "    -").matching()
-      test()
-    }
-
-    chars {
-      ("abcd" - "abcdx" - "abcdx")
-      ("    " - "    -" - "    -").matching()
-      test()
-    }
-
-    chars {
-      ("abcd" - "abcdx" - "abcdy")
-      ("    " - "    -" - "    -").matching()
-      test()
-    }
-
-    chars {
-      ("abcdz" - "abcdx" - "abcdy")
-      ("    -" - "    -" - "    -").matching()
-      test()
-    }
-
-    chars {
-      ("xabcd" - "abcd" - "abcd")
-      ("-    " - "    " - "    ").matching()
-      test()
-    }
-
-    chars {
-      ("xabcd" - "yabcd" - "abcd")
-      ("-    " - "-    " - "    ").matching()
-      test()
-    }
-
-    chars {
-      ("abcd" - "yabcd" - "abcd")
-      ("    " - "-    " - "    ").matching()
-      test()
-    }
-  }
-
-  public fun testMultipleChanges() {
-    chars {
-      ("XXbXcXXeX" - "XyXzXXnXkX" - "XqXXeXrXX")
-      ("  - -  - " - " - -  - - " - " -  - -  ").matching()
-      test()
-    }
-
-    chars {
-      ("Ax" - "z" - "zA")
-      ("--" - "-" - "--").matching()
-      test()
-    }
-
-    chars {
-      ("ayz" - "xyz" - "xyq")
-      ("- -" - "- -" - "- -").matching()
-      test()
-    }
-  }
+//  public fun testSimpleCases() {
+//    chars {
+//      ("" - "" - "")
+//      ("" - "" - "").matching()
+//      changes()
+//      test()
+//    }
+//
+//    chars {
+//      ("xyz" - "xyz" - "xyz")
+//      ("   " - "   " - "   ").matching()
+//      changes()
+//      test()
+//    }
+//
+//    chars {
+//      ("" - "" - "x")
+//      ("" - "" - "-").matching()
+//      changes(mod(0, 0, 0, 0, 0, 1))
+//      test()
+//    }
+//
+//    chars {
+//      ("x" - "yx" - "x")
+//      (" " - "- " - " ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("x" - "xy" - "x")
+//      (" " - " -" - " ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("xyz" - "xYz" - "xyz")
+//      (" - " - " - " - " - ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("xyz" - "XyZ" - "xyz")
+//      ("- -" - "- -" - "- -").matching()
+//      test()
+//    }
+//  }
+//
+//  public fun testConflictTYpes() {
+//    chars {
+//      ("abcd" - "abcd" - "abXcd")
+//      ("    " - "    " - "  -  ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("abXcd" - "abcd" - "abXcd")
+//      ("  -  " - "    " - "  -  ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("abcd" - "abXcd" - "abXcd")
+//      ("    " - "  -  " - "  -  ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("abcd" - "abXcd" - "abcd")
+//      ("    " - "  -  " - "    ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("abcd" - "abXcd" - "abYcd")
+//      ("    " - "  -  " - "  -  ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("abXcd" - "abXcd" - "abYcd")
+//      ("  -  " - "  -  " - "  -  ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("abYcd" - "abXcd" - "abYcd")
+//      ("  -  " - "  -  " - "  -  ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("abYcd" - "abXcd" - "abZcd")
+//      ("  -  " - "  -  " - "  -  ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("abXcd" - "abcd" - "abYcd")
+//      ("  -  " - "    " - "  -  ").matching()
+//      test()
+//    }
+//  }
+//
+//  public fun testBoundaryConflicts() {
+//    chars {
+//      ("abcd" - "abcd" - "abcdx")
+//      ("    " - "    " - "    -").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("abcd" - "abcdx" - "abcdx")
+//      ("    " - "    -" - "    -").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("abcd" - "abcdx" - "abcdy")
+//      ("    " - "    -" - "    -").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("abcdz" - "abcdx" - "abcdy")
+//      ("    -" - "    -" - "    -").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("xabcd" - "abcd" - "abcd")
+//      ("-    " - "    " - "    ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("xabcd" - "yabcd" - "abcd")
+//      ("-    " - "-    " - "    ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("abcd" - "yabcd" - "abcd")
+//      ("    " - "-    " - "    ").matching()
+//      test()
+//    }
+//  }
+//
+//  public fun testMultipleChanges() {
+//    chars {
+//      ("XXbXcXXeX" - "XyXzXXnXkX" - "XqXXeXrXX")
+//      ("  - -  - " - " - -  - - " - " -  - -  ").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("Ax" - "z" - "zA")
+//      ("--" - "-" - "--").matching()
+//      test()
+//    }
+//
+//    chars {
+//      ("ayz" - "xyz" - "xyq")
+//      ("- -" - "- -" - "- -").matching()
+//      test()
+//    }
+//  }
 }

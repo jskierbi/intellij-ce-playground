@@ -37,7 +37,7 @@ internal class BinaryRequestHandlerTest {
       override fun initChannel(channel: Channel) {
         channel.pipeline().addLast(object : Decoder() {
           override fun messageReceived(context: ChannelHandlerContext, input: ByteBuf) {
-            val requiredLength = 4 + text.length()
+            val requiredLength = 4 + text.length
             val response = readContent(input, context, requiredLength) { buffer, context, isCumulateBuffer -> buffer.toString(buffer.readerIndex(), requiredLength, CharsetUtil.UTF_8) }
             if (response != null) {
               result.setResult(response)
@@ -63,7 +63,7 @@ internal class BinaryRequestHandlerTest {
     try {
       result.rejected(object : Consumer<Throwable> {
         override fun consume(error: Throwable) {
-          TestCase.fail(error.getMessage())
+          TestCase.fail(error.message)
         }
       })
 

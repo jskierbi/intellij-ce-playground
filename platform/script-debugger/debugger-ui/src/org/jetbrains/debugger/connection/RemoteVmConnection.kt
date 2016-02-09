@@ -63,7 +63,7 @@ abstract class RemoteVmConnection : VmConnection<Vm>() {
             if (it !is ConnectException) {
               Promise.logError(LOG, it)
             }
-            setState(ConnectionStatus.CONNECTION_FAILED, it.getMessage())
+            setState(ConnectionStatus.CONNECTION_FAILED, it.message)
           }
           .processed { connectCancelHandler.set(null) }
 
@@ -86,7 +86,7 @@ abstract class RemoteVmConnection : VmConnection<Vm>() {
 }
 
 fun <T> chooseDebuggee(targets: Collection<T>, selectedIndex: Int, itemToString: (T) -> String): org.jetbrains.concurrency.Promise<T> {
-  if (targets.size() == 1) {
+  if (targets.size == 1) {
     return resolvedPromise(targets.first())
   }
   else if (targets.isEmpty()) {

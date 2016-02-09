@@ -28,7 +28,6 @@ import com.intellij.xdebugger.XDebugSession
 import com.intellij.xdebugger.breakpoints.XBreakpoint
 import com.intellij.xdebugger.breakpoints.XBreakpointHandler
 import com.intellij.xdebugger.breakpoints.XLineBreakpoint
-import com.intellij.xdebugger.breakpoints.XLineBreakpointType
 import com.intellij.xdebugger.evaluation.XDebuggerEditorsProvider
 import com.intellij.xdebugger.frame.XSuspendContext
 import com.intellij.xdebugger.stepping.XSmartStepIntoHandler
@@ -217,7 +216,7 @@ abstract class DebugProcessImpl<C : VmConnection<*>>(session: XDebugSession,
   }
 
   override final fun startPausing() {
-    connection.vm.suspendContextManager.suspend().rejected(RejectErrorReporter(session, "Cannot pause"))
+    connection.vm?.suspendContextManager?.suspend()?.rejected(RejectErrorReporter(session, "Cannot pause"))
   }
 
   override final fun getCurrentStateMessage() = connection.state.message
@@ -233,14 +232,14 @@ abstract class DebugProcessImpl<C : VmConnection<*>>(session: XDebugSession,
   abstract fun getLocationsForBreakpoint(breakpoint: XLineBreakpoint<*>, onlySourceMappedBreakpoints: Boolean): List<Location>
 }
 
-class LineBreakpointHandler(breakpointTypeClass: Class<out XLineBreakpointType<*>>,
-                            private val manager: LineBreakpointManager,
-                            private val onlySourceMappedBreakpoints: Boolean) : XBreakpointHandler<XLineBreakpoint<*>>(breakpointTypeClass) {
-  override fun registerBreakpoint(breakpoint: XLineBreakpoint<*>) {
-    manager.setBreakpoint(breakpoint, onlySourceMappedBreakpoints)
-  }
-
-  override fun unregisterBreakpoint(breakpoint: XLineBreakpoint<*>, temporary: Boolean) {
-    manager.removeBreakpoint(breakpoint, temporary)
-  }
-}
+//class LineBreakpointHandler(breakpointTypeClass: Class<out XLineBreakpointType<*>>,
+//                            private val manager: LineBreakpointManager,
+//                            private val onlySourceMappedBreakpoints: Boolean) : XBreakpointHandler<XLineBreakpoint<*>>(breakpointTypeClass) {
+//  override fun registerBreakpoint(breakpoint: XLineBreakpoint<*>) {
+//    manager.setBreakpoint(breakpoint, onlySourceMappedBreakpoints)
+//  }
+//
+//  override fun unregisterBreakpoint(breakpoint: XLineBreakpoint<*>, temporary: Boolean) {
+//    manager.removeBreakpoint(breakpoint, temporary)
+//  }
+//}

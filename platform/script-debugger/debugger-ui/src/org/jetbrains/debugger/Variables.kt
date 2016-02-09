@@ -55,7 +55,7 @@ fun processScopeVariables(scope: Scope,
                           context: VariableContext,
                           isLast: Boolean) = processVariables(context, scope.variablesHost.get(), node, { memberFilter, variables ->
   val additionalVariables = memberFilter.additionalVariables
-  val properties = ArrayList<Variable>(variables.size() + additionalVariables.size())
+  val properties = ArrayList<Variable>(variables.size + additionalVariables.size)
   val functions = SmartList<Variable>()
   for (variable in variables) {
     if (memberFilter.isMemberVisible(variable)) {
@@ -69,7 +69,7 @@ fun processScopeVariables(scope: Scope,
     }
   }
 
-  val comparator = if (memberFilter.hasNameMappings()) comparator { o1, o2 -> naturalCompare(memberFilter.rawNameToSource(o1), memberFilter.rawNameToSource(o2)) } else NATURAL_NAME_COMPARATOR
+  val comparator = if (memberFilter.hasNameMappings()) Comparator<Variable> { o1, o2 -> naturalCompare(memberFilter.rawNameToSource(o1), memberFilter.rawNameToSource(o2)) } else NATURAL_NAME_COMPARATOR
   Collections.sort(properties, comparator)
   Collections.sort(functions, comparator)
 
@@ -101,14 +101,14 @@ fun processNamedObjectProperties(variables: List<Variable>,
     return null
   }
 
-  val to = Math.min(maxChildrenToAdd, list.size())
-  val isLast = to == list.size()
+  val to = Math.min(maxChildrenToAdd, list.size)
+  val isLast = to == list.size
   node.addChildren(createVariablesList(list, 0, to, context, memberFilter), defaultIsLast && isLast)
   if (isLast) {
     return null
   }
   else {
-    node.tooManyChildren(list.size() - to)
+    node.tooManyChildren(list.size - to)
     return list
   }
 }
@@ -119,7 +119,7 @@ fun filterAndSort(variables: List<Variable>, memberFilter: MemberFilter): List<V
   }
 
   val additionalVariables = memberFilter.additionalVariables
-  val result = ArrayList<Variable>(variables.size() + additionalVariables.size())
+  val result = ArrayList<Variable>(variables.size + additionalVariables.size)
   for (variable in variables) {
     if (memberFilter.isMemberVisible(variable)) {
       result.add(variable)
@@ -158,13 +158,13 @@ private fun naturalCompare(string1: String?, string2: String?): Int {
     return 1
   }
 
-  val string1Length = string1.length()
-  val string2Length = string2.length()
+  val string1Length = string1.length
+  val string2Length = string2.length
   var i = 0
   var j = 0
   while (i < string1Length && j < string2Length) {
-    var ch1 = string1.charAt(i)
-    var ch2 = string2.charAt(j)
+    var ch1 = string1.get(i)
+    var ch2 = string2.get(j)
     if ((StringUtil.isDecimalDigit(ch1) || ch1 == ' ') && (StringUtil.isDecimalDigit(ch2) || ch2 == ' ')) {
       var startNum1 = i
       while (ch1 == ' ' || ch1 == '0') {
@@ -173,7 +173,7 @@ private fun naturalCompare(string1: String?, string2: String?): Int {
         if (startNum1 >= string1Length) {
           break
         }
-        ch1 = string1.charAt(startNum1)
+        ch1 = string1.get(startNum1)
       }
       var startNum2 = j
       while (ch2 == ' ' || ch2 == '0') {
@@ -182,15 +182,15 @@ private fun naturalCompare(string1: String?, string2: String?): Int {
         if (startNum2 >= string2Length) {
           break
         }
-        ch2 = string2.charAt(startNum2)
+        ch2 = string2.get(startNum2)
       }
       i = startNum1
       j = startNum2
       // find end index of number
-      while (i < string1Length && StringUtil.isDecimalDigit(string1.charAt(i))) {
+      while (i < string1Length && StringUtil.isDecimalDigit(string1.get(i))) {
         i++
       }
-      while (j < string2Length && StringUtil.isDecimalDigit(string2.charAt(j))) {
+      while (j < string2Length && StringUtil.isDecimalDigit(string2.get(j))) {
         j++
       }
       val lengthDiff = (i - startNum1) - (j - startNum2)
@@ -200,7 +200,7 @@ private fun naturalCompare(string1: String?, string2: String?): Int {
       }
       while (startNum1 < i) {
         // compare numbers with equal digit count
-        val diff = string1.charAt(startNum1) - string2.charAt(startNum2)
+        val diff = string1.get(startNum1) - string2.get(startNum2)
         if (diff != 0) {
           return diff
         }
@@ -237,7 +237,7 @@ private fun naturalCompare(string1: String?, string2: String?): Int {
 }
 
 @JvmOverloads fun createVariablesList(variables: List<Variable>, variableContext: VariableContext, memberFilter: MemberFilter? = null): XValueChildrenList {
-  return createVariablesList(variables, 0, variables.size(), variableContext, memberFilter)
+  return createVariablesList(variables, 0, variables.size, variableContext, memberFilter)
 }
 
 fun createVariablesList(variables: List<Variable>, from: Int, to: Int, variableContext: VariableContext, memberFilter: MemberFilter?): XValueChildrenList {

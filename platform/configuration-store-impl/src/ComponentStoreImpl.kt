@@ -115,7 +115,7 @@ abstract class ComponentStoreImpl : IComponentStore {
   override fun save(readonlyFiles: MutableList<JBPair<StateStorage.SaveSession, VirtualFile>>) {
     val externalizationSession = if (components.isEmpty()) null else storageManager.startExternalization()
     if (externalizationSession != null) {
-      val names = ArrayUtilRt.toStringArray(components.keySet())
+      val names = ArrayUtilRt.toStringArray(components.keys)
       Arrays.sort(names)
       for (name in names) {
         commitComponent(externalizationSession, components.get(name)!!, name)
@@ -307,7 +307,7 @@ abstract class ComponentStoreImpl : IComponentStore {
 
   protected open fun <T> getStorageSpecs(component: PersistentStateComponent<T>, stateSpec: State, operation: StateStorageOperation): Array<out Storage> {
     val storages = stateSpec.storages
-    if (storages.size() == 1 || component is StateStorageChooserEx) {
+    if (storages.size == 1 || component is StateStorageChooserEx) {
       return storages
     }
 
@@ -420,7 +420,7 @@ abstract class ComponentStoreImpl : IComponentStore {
   }
 
   companion object {
-    protected fun executeSave(session: SaveSession, readonlyFiles: MutableList<JBPair<SaveSession, VirtualFile>>, previousErrors: MutableList<Throwable>?): MutableList<Throwable>? {
+    fun executeSave(session: SaveSession, readonlyFiles: MutableList<JBPair<SaveSession, VirtualFile>>, previousErrors: MutableList<Throwable>?): MutableList<Throwable>? {
       var errors = previousErrors
       try {
         session.save()
@@ -461,7 +461,7 @@ internal fun sortStoragesByDeprecated(storages: Array<Storage>): Array<out Stora
 
   if (!storages[0].deprecated) {
     var othersAreDeprecated = true
-    for (i in 1..storages.size() - 1) {
+    for (i in 1..storages.size - 1) {
       if (!storages[i].deprecated) {
         othersAreDeprecated = false
         break
@@ -473,7 +473,7 @@ internal fun sortStoragesByDeprecated(storages: Array<Storage>): Array<out Stora
     }
   }
 
-  return storages.sortedArrayWith(comparator { o1, o2 ->
+  return storages.sortedArrayWith(Comparator { o1, o2 ->
     val w1 = if (o1.deprecated) 1 else 0
     val w2 = if (o2.deprecated) 1 else 0
     w1 - w2

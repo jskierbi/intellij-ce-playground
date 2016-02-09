@@ -41,7 +41,7 @@ class EdtTestUtil {
           SwingUtilities.invokeAndWait(runnable)
         }
         catch (e: InvocationTargetException) {
-          throw e.getCause() ?: e
+          throw e.cause ?: e
         }
       }
     }

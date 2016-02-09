@@ -16,10 +16,6 @@
 package com.intellij.diff.comparison
 
 import com.intellij.diff.DiffTestCase
-import com.intellij.diff.DiffTestCase.Trio
-import com.intellij.diff.assertEquals
-import com.intellij.diff.assertOrderedEquals
-import com.intellij.diff.assertTrue
 import com.intellij.diff.fragments.MergeLineFragment
 import com.intellij.diff.util.IntPair
 import com.intellij.diff.util.ThreeSide
@@ -95,7 +91,7 @@ public abstract class ComparisonMergeUtilTestBase : DiffTestCase() {
   }
 
 
-  private enum class TestType {
+  enum class TestType {
     CHAR
   }
 

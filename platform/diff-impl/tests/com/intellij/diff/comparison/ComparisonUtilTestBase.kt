@@ -15,14 +15,14 @@
  */
 package com.intellij.diff.comparison
 
-import com.intellij.diff.*
+import com.intellij.diff.DiffTestCase
 import com.intellij.diff.fragments.DiffFragment
 import com.intellij.diff.fragments.LineFragment
 import com.intellij.openapi.editor.Document
 import com.intellij.openapi.editor.impl.DocumentImpl
 import com.intellij.openapi.util.Couple
 import com.intellij.util.containers.ContainerUtil
-import java.util.BitSet
+import java.util.*
 
 public abstract class ComparisonUtilTestBase : DiffTestCase() {
   private fun doLineTest(before: Document, after: Document, expected: List<Change>?, policy: ComparisonPolicy) {
@@ -62,7 +62,7 @@ public abstract class ComparisonUtilTestBase : DiffTestCase() {
   }
 
   private fun checkConsistencyWord(fragments: List<LineFragment>, before: Document, after: Document) {
-    assertTrue(fragments.size() == 1)
+    assertTrue(fragments.size == 1)
     val fragment = fragments.get(0)
 
     assertTrue(fragment.getStartOffset1() == 0)
@@ -155,11 +155,11 @@ public abstract class ComparisonUtilTestBase : DiffTestCase() {
   // Test Builder
   //
 
-  private enum class TestType {
+  enum class TestType {
     LINE, WORD, CHAR, SPLITTER
   }
 
-  public inner class TestBuilder(private val type: TestType) {
+  public inner class TestBuilder(val type: TestType) {
     private var isExecuted: Boolean = false
 
     private var before: Document? = null
@@ -211,7 +211,7 @@ public abstract class ComparisonUtilTestBase : DiffTestCase() {
         }
       }
       catch (e: Throwable) {
-        println("Policy: " + policy.name())
+        println("Policy: " + policy.name)
         throw e
       }
     }

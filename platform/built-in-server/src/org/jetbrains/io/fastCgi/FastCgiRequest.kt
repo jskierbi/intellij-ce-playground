@@ -32,7 +32,7 @@ class FastCgiRequest(val requestId: Int, allocator: ByteBufAllocator) {
 
   fun writeFileHeaders(pathInfo: PathInfo, canonicalRequestPath: CharSequence) {
     val root = pathInfo.root
-    addHeader("DOCUMENT_ROOT", root.path.separatorsToSystem())
+    addHeader("DOCUMENT_ROOT", root.path)
     addHeader("SCRIPT_FILENAME", pathInfo.filePath)
     addHeader("SCRIPT_NAME", canonicalRequestPath)
   }
@@ -42,8 +42,8 @@ class FastCgiRequest(val requestId: Int, allocator: ByteBufAllocator) {
       return
     }
 
-    val keyLength = key.length()
-    val valLength = value.length()
+    val keyLength = key.length
+    val valLength = value.length
     writeHeader(buffer!!, PARAMS, keyLength + valLength + (if (keyLength < 128) 1 else 4) + (if (valLength < 128) 1 else 4))
 
     if (keyLength < 128) {

@@ -197,7 +197,7 @@ fun getExportableComponentsMap(onlyExisting: Boolean,
   }
 
   if (onlyExisting || onlyPaths != null) {
-    val it = result.keySet().iterator()
+    val it = result.keys.iterator()
     while (it.hasNext()) {
       if (isSkipFile(it.next())) {
         it.remove()

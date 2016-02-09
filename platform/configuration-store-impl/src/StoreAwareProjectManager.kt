@@ -226,7 +226,7 @@ private fun reloadStore(changedStorages: Set<StateStorage>, store: ComponentStor
     }
     catch (e: Throwable) {
       LOG.warn(e)
-      Messages.showWarningDialog(ProjectBundle.message("project.reload.failed", e.getMessage()), ProjectBundle.message("project.reload.failed.title"))
+      Messages.showWarningDialog(ProjectBundle.message("project.reload.failed", e.message), ProjectBundle.message("project.reload.failed.title"))
       return ReloadComponentStoreStatus.ERROR
     }
 
@@ -257,7 +257,7 @@ fun askToRestart(store: IComponentStore, notReloadableComponents: Collection<Str
   var count = 0
   for (component in notReloadableComponents) {
     if (count == 10) {
-      message.append('\n').append("and ").append(notReloadableComponents.size() - count).append(" more").append('\n')
+      message.append('\n').append("and ").append(notReloadableComponents.size - count).append(" more").append('\n')
     }
     else {
       message.append(component).append('\n')

@@ -16,8 +16,6 @@
 package com.intellij.diff.tools.fragmented
 
 import com.intellij.diff.DiffTestCase
-import com.intellij.diff.assertEquals
-import com.intellij.diff.assertTrue
 import com.intellij.diff.comparison.ComparisonPolicy
 import com.intellij.diff.util.LineRange
 import com.intellij.diff.util.Side
@@ -91,7 +89,7 @@ public class UnifiedFragmentBuilderAutoTest : DiffTestCase() {
     }
 
     // changed fragments and changed blocks should have same content
-    assertEquals(blocks.size(), fragments.size())
+    assertEquals(blocks.size, fragments.size)
     for (i in fragments.indices) {
       val fragment = fragments.get(i)
       val block = blocks.get(i)
@@ -119,15 +117,15 @@ public class UnifiedFragmentBuilderAutoTest : DiffTestCase() {
     var index1 = 0
     var index2 = 0
 
-    while (index2 < sequence.length()) {
-      val c2 = sequence.charAt(index2)
+    while (index2 < sequence.length) {
+      val c2 = sequence.get(index2)
       if (c2 == '\n' || (StringUtil.isWhiteSpace(c2) && ignoreWhitespaces)) {
         index2++
         continue
       }
 
-      assertTrue(index1 < text.length())
-      val c1 = text.charAt(index1)
+      assertTrue(index1 < text.length)
+      val c1 = text.get(index1)
       if (c1 == '\n' || (StringUtil.isWhiteSpace(c1) && ignoreWhitespaces)) {
         index1++
         continue

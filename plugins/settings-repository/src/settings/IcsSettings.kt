@@ -15,7 +15,6 @@
  */
 package org.jetbrains.settingsRepository
 
-import com.fasterxml.jackson.annotation.JsonIgnore
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.annotation.JsonInclude
 import com.fasterxml.jackson.core.JsonGenerator
@@ -61,7 +60,7 @@ class MyPrettyPrinter : DefaultPrettyPrinter() {
 
 fun saveSettings(settings: IcsSettings, settingsFile: File) {
   val serialized = ObjectMapper().writer<ObjectWriter>(MyPrettyPrinter()).writeValueAsBytes(settings)
-  if (serialized.size() <= 2) {
+  if (serialized.size <= 2) {
     FileUtil.delete(settingsFile)
   }
   else {
@@ -94,7 +93,7 @@ class IcsSettings {
 @JsonInclude(value = JsonInclude.Include.NON_DEFAULT)
 @JsonIgnoreProperties(ignoreUnknown = true)
 class ReadonlySource(var url: String? = null, var active: Boolean = true) {
-  @JsonIgnore
+//  @JsonIgnore
   val path: String?
     get() {
       if (url == null) {
@@ -104,7 +103,7 @@ class ReadonlySource(var url: String? = null, var active: Boolean = true) {
         var fileName = PathUtilRt.getFileName(url!!)
         val suffix = ".git"
         if (fileName.endsWith(suffix)) {
-          fileName = fileName.substring(0, fileName.length() - suffix.length())
+          fileName = fileName.substring(0, fileName.length - suffix.length)
         }
         // the convention is that the .git extension should be used for bare repositories
         return "${FileUtil.sanitizeFileName(fileName, false)}.${Integer.toHexString(url!!.hashCode())}.git"

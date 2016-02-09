@@ -46,32 +46,32 @@ public class DottedFilterEdgesGeneratorTest {
   @Test fun simple() = graph {
     1(2)
     2.UNM(3)
-    3()
+//    3()
   }.assert {
     1(3.dot)
-    3()
+//    3()
   }
 
   @Test fun simple2Up() = graph {
     1(3)
     2(3)
     3.UNM(4)
-    4()
+//    4()
   }.assert {
     1(4.dot)
     2(4.dot)
-    4()
+//    4()
   }
 
   @Test fun simple2Down() = graph {
     1(2)
     2.UNM(3, 4)
-    3()
-    4()
+//    3()
+//    4()
   }.assert {
     1(3.dot, 4.dot)
-    3()
-    4()
+//    3()
+//    4()
   }
 
   /*
@@ -85,14 +85,14 @@ public class DottedFilterEdgesGeneratorTest {
     0(1, 2)
     1.UNM(3, 4)
     2.UNM(4, 5)
-    3()
-    4()
-    5()
+//    3()
+//    4()
+//    5()
   }.assert {
     0(3.dot, 4.dot, 5.dot)
-    3()
-    4()
-    5()
+//    3()
+//    4()
+//    5()
   }
 
   /*
@@ -108,12 +108,12 @@ public class DottedFilterEdgesGeneratorTest {
     2(4)
     3.UNM(5)
     4.UNM(5)
-    5()
+//    5()
   }.assert {
     0(5.dot)
     1(5.dot)
     2(5.dot)
-    5()
+//    5()
   }
 
   /*
@@ -132,12 +132,12 @@ public class DottedFilterEdgesGeneratorTest {
     3(5)
     4.UNM(6)
     5.UNM(6)
-    6()
+//    6()
   }.assert {
     1(2, 3)
     2(6.dot)
     3(6.dot)
-    6()
+//    6()
   }
 
   @Test fun simpleMerge2() = graph {
@@ -146,12 +146,12 @@ public class DottedFilterEdgesGeneratorTest {
     3.UNM(5)
     4(6)
     5(6)
-    6()
+//    6()
   }.assert {
     1(4.dot, 5.dot)
     4(6)
     5(6)
-    6()
+//    6()
   }
 
   @Test fun fork() = graph {
@@ -160,12 +160,12 @@ public class DottedFilterEdgesGeneratorTest {
     2(3)
     3.UNM(4)
     4.UNM(5)
-    5()
+//    5()
   }.assert {
     0(2)
     1(5.dot)
     2(5.dot)
-    5()
+//    5()
   }
 
 }

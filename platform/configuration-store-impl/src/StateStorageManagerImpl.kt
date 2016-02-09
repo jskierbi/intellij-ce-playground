@@ -135,7 +135,7 @@ open class StateStorageManagerImpl(private val rootTagName: String,
   protected open fun normalizeFileSpec(fileSpec: String): String {
     val path = FileUtilRt.toSystemIndependentName(fileSpec)
     // fileSpec for directory based storage could be erroneously specified as "name/"
-    return if (path.endsWith('/')) path.substring(0, path.length() - 1) else path
+    return if (path.endsWith('/')) path.substring(0, path.length - 1) else path
   }
 
   fun getOrCreateStorage(collapsedPath: String,
@@ -330,7 +330,7 @@ open class StateStorageManagerImpl(private val rootTagName: String,
 
   override fun startExternalization() = StateStorageManagerExternalizationSession(this)
 
-  private class StateStorageManagerExternalizationSession(private val storageManager: StateStorageManagerImpl) : StateStorageManager.ExternalizationSession {
+  class StateStorageManagerExternalizationSession(private val storageManager: StateStorageManagerImpl) : StateStorageManager.ExternalizationSession {
     private val sessions = LinkedHashMap<StateStorage, StateStorage.ExternalizationSession>()
 
     override fun setState(storageSpecs: Array<Storage>, component: Any, componentName: String, state: Any) {
@@ -369,12 +369,12 @@ open class StateStorageManagerImpl(private val rootTagName: String,
       }
 
       var saveSessions: MutableList<SaveSession>? = null
-      val externalizationSessions = sessions.values()
+      val externalizationSessions = sessions.values
       for (session in externalizationSessions) {
         val saveSession = session.createSaveSession()
         if (saveSession != null) {
           if (saveSessions == null) {
-            if (externalizationSessions.size() == 1) {
+            if (externalizationSessions.size == 1) {
               return listOf(saveSession)
             }
             saveSessions = SmartList<SaveSession>()
@@ -396,6 +396,6 @@ open class StateStorageManagerImpl(private val rootTagName: String,
 }
 
 fun String.startsWithMacro(macro: String): Boolean {
-  val i = macro.length()
-  return length() > i && charAt(i) == '/' && startsWith(macro)
+  val i = macro.length
+  return length > i && get(i) == '/' && startsWith(macro)
 }

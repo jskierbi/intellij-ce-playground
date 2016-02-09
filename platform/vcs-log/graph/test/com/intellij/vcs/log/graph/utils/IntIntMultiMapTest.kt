@@ -20,7 +20,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Test
 
 
-private class MapTester {
+class MapTester {
   val correctMap = MultiMap<Int, Int>()
   val testedMap = IntIntMultiMap()
 

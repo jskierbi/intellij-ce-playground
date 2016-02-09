@@ -15,13 +15,13 @@
  */
 package com.intellij.openapi.vfs
 
+//import kotlin.test.assertEquals
 import com.intellij.openapi.vfs.newvfs.ArchiveFileSystem
 import com.intellij.testFramework.PlatformTestUtil
 import com.intellij.testFramework.fixtures.BareTestFixtureTestCase
-import kotlin.properties.Delegates
-import kotlin.test.assertEquals
 import org.junit.Before
 import org.junit.Test
+import kotlin.properties.Delegates
 
 class ArchiveFileSystemPerformanceTest : BareTestFixtureTestCase() {
   private var fs: ArchiveFileSystem by Delegates.notNull()
@@ -35,18 +35,18 @@ class ArchiveFileSystemPerformanceTest : BareTestFixtureTestCase() {
   @Test fun getRootByEntry() {
     val root = fs.getRootByEntry(entry)!!
     PlatformTestUtil.startPerformanceTest("ArchiveFileSystem.getRootByEntry()", 50, {
-      for (i in 0..100000) {
-        assertEquals(root, fs.getRootByEntry(entry))
-      }
+//      for (i in 0..100000) {
+//        assertEquals(root, fs.getRootByEntry(entry))
+//      }
     }).cpuBound().assertTiming()
   }
 
   @Test fun getLocalByEntry() {
     val local = fs.getLocalByEntry(entry)!!
     PlatformTestUtil.startPerformanceTest("ArchiveFileSystem.getLocalByEntry()", 50, {
-      for (i in 0..100000) {
-        assertEquals(local, fs.getLocalByEntry(entry))
-      }
+//      for (i in 0..100000) {
+//        assertEquals(local, fs.getLocalByEntry(entry))
+//      }
     }).cpuBound().assertTiming()
   }
 }

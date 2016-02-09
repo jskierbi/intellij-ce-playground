@@ -21,17 +21,17 @@ import com.intellij.openapi.util.io.FileUtil;
 import java.io.File;
 import java.io.IOException;
 
-abstract class AbstractTestWithTextFile {
+public abstract class AbstractTestWithTextFile {
   public static final String BASE_DIRECTORY = "platform/vcs-log/graph/testData/";
 
   protected final String myDirectory;
 
   @SuppressWarnings("JUnitTestCaseWithNonTrivialConstructors")
-  protected AbstractTestWithTextFile(String directory) {
+  AbstractTestWithTextFile(String directory) {
     this.myDirectory = PathManagerEx.findFileUnderCommunityHome(BASE_DIRECTORY + directory).getPath();
   }
 
-  protected String loadText(String filename) throws IOException {
+  String loadText(String filename) throws IOException {
     return FileUtil.loadFile(new File(myDirectory, filename), true);
   }
 

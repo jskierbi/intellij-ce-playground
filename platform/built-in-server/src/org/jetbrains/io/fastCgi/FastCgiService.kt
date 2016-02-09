@@ -75,7 +75,7 @@ public abstract class FastCgiService(project: Project) : SingleConnectionNetServ
           }
         }
 
-        if (builder.length() == 0) {
+        if (builder.length == 0) {
           // end of headers
           return
         }

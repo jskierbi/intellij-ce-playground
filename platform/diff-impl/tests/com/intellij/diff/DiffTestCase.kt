@@ -162,14 +162,14 @@ public abstract class DiffTestCase : UsefulTestCase() {
       return seedFieldValue.get() xor 0x5DEECE66DL
     } catch (e: Exception) {
       gotSeedException = true
-      System.err.println("Can't get random seed: " + e.getMessage())
+      System.err.println("Can't get random seed: " + e.message)
       return -1
     }
   }
 
   private fun stripNewline(text: CharSequence): CharSequence? {
     return when (StringUtil.endsWithChar(text, '\n') ) {
-      true -> CharSequenceSubSequence(text, 0, text.length() - 1)
+      true -> CharSequenceSubSequence(text, 0, text.length - 1)
       false -> null
     }
   }
@@ -209,7 +209,7 @@ public abstract class DiffTestCase : UsefulTestCase() {
       f(data3, ThreeSide.RIGHT)
     }
 
-    public fun invoke(side: ThreeSide): T = side.select(data1, data2, data3) as T
+    public operator fun invoke(side: ThreeSide): T = side.select(data1, data2, data3) as T
 
     override fun toString(): String {
       return "($data1, $data2, $data3)"

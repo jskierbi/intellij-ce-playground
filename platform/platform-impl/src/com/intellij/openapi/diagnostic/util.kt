@@ -15,7 +15,7 @@
  */
 package com.intellij.openapi.diagnostic
 
-inline fun Logger.debug(lazyMessage: () -> String) {
+inline infix fun Logger.debug(lazyMessage: () -> String) {
   if (isDebugEnabled) {
     debug(lazyMessage())
   }
